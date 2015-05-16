@@ -10,4 +10,6 @@
 
 @interface MKBResultsViewController : UITableViewController
 
+@property (nonatomic, copy) NSString *searchTerm;
+
 @end

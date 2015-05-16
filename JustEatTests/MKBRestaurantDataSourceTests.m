@@ -1,6 +1,6 @@
 //
-//  JustEatTests.m
-//  JustEatTests
+//  MKBRestaurantDataSourceTests.m
+//  JustEat
 //
 //  Created by Mark Bridges on 16/05/2015.
 //  Copyright (c) 2015 Mark Bridges. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface JustEatTests : XCTestCase
+@interface MKBRestaurantDataSourceTests : XCTestCase
 
 @end
 
-@implementation JustEatTests
+@implementation MKBRestaurantDataSourceTests
 
 - (void)setUp {
     [super setUp];

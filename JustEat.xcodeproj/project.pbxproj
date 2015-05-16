@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564E951585FA3B53DC57E810 /* libPods-JustEat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */; };
 		ABAFDE211B075246004C7608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE201B075246004C7608 /* main.m */; };
 		ABAFDE2C1B075246004C7608 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2B1B075246004C7608 /* Images.xcassets */; };
 		ABAFDE2F1B075246004C7608 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */; };
-		ABAFDE3B1B075246004C7608 /* JustEatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE3A1B075246004C7608 /* JustEatTests.m */; };
 		ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE451B075274004C7608 /* MKBAppDelegate.m */; };
-		ABAFDE561B075274004C7608 /* MKBCuisineTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */; };
+		ABAFDE561B075274004C7608 /* MKBCuisineType.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE471B075274004C7608 /* MKBCuisineType.m */; };
 		ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE491B075274004C7608 /* MKBLogo.m */; };
 		ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4B1B075274004C7608 /* MKBRatingsView.m */; };
-		ABAFDE591B075274004C7608 /* MKBRestaurants.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */; };
+		ABAFDE591B075274004C7608 /* MKBRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4D1B075274004C7608 /* MKBRestaurant.m */; };
 		ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4F1B075274004C7608 /* MKBResultsViewController.m */; };
 		ABAFDE5B1B075274004C7608 /* MKBResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */; };
 		ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE531B075274004C7608 /* MKBSearchViewController.m */; };
 		ABAFDE5D1B075274004C7608 /* StarMask.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE541B075274004C7608 /* StarMask.xib */; };
 		ABAFDE601B0752C4004C7608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE5E1B0752C4004C7608 /* Main.storyboard */; };
+		ABAFDE671B075494004C7608 /* MKBSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE661B075494004C7608 /* MKBSessionManager.m */; };
+		ABAFDE691B0757DA004C7608 /* MKBRestaurantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */; };
+		ABAFDE6C1B07587F004C7608 /* MKBRestaurantResultsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE6B1B07587F004C7608 /* MKBRestaurantResultsDataSource.m */; };
+		ABAFDE6E1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */; };
+		ABAFDE711B075CE2004C7608 /* JSTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE701B075CE2004C7608 /* JSTestUtils.m */; };
+		ABAFDE741B075D53004C7608 /* Restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE731B075D53004C7608 /* Restaurant.json */; };
+		ABAFDE771B0761BE004C7608 /* NSString+ArrayWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JustEat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6B97487CEF7E87613F6011 /* Pods-JustEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.debug.xcconfig"; sourceTree = "<group>"; };
 		ABAFDE1B1B075246004C7608 /* JustEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFDE1F1B075246004C7608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAFDE201B075246004C7608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,17 +50,16 @@
 		ABAFDE2E1B075246004C7608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ABAFDE341B075246004C7608 /* JustEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFDE391B075246004C7608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABAFDE3A1B075246004C7608 /* JustEatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustEatTests.m; sourceTree = "<group>"; };
 		ABAFDE441B075274004C7608 /* MKBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBAppDelegate.h; sourceTree = "<group>"; };
 		ABAFDE451B075274004C7608 /* MKBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBAppDelegate.m; sourceTree = "<group>"; };
-		ABAFDE461B075274004C7608 /* MKBCuisineTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBCuisineTypes.h; sourceTree = "<group>"; };
-		ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBCuisineTypes.m; sourceTree = "<group>"; };
+		ABAFDE461B075274004C7608 /* MKBCuisineType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBCuisineType.h; sourceTree = "<group>"; };
+		ABAFDE471B075274004C7608 /* MKBCuisineType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBCuisineType.m; sourceTree = "<group>"; };
 		ABAFDE481B075274004C7608 /* MKBLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBLogo.h; sourceTree = "<group>"; };
 		ABAFDE491B075274004C7608 /* MKBLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBLogo.m; sourceTree = "<group>"; };
 		ABAFDE4A1B075274004C7608 /* MKBRatingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRatingsView.h; sourceTree = "<group>"; };
 		ABAFDE4B1B075274004C7608 /* MKBRatingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRatingsView.m; sourceTree = "<group>"; };
-		ABAFDE4C1B075274004C7608 /* MKBRestaurants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurants.h; sourceTree = "<group>"; };
-		ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurants.m; sourceTree = "<group>"; };
+		ABAFDE4C1B075274004C7608 /* MKBRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurant.h; sourceTree = "<group>"; };
+		ABAFDE4D1B075274004C7608 /* MKBRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurant.m; sourceTree = "<group>"; };
 		ABAFDE4E1B075274004C7608 /* MKBResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBResultsViewController.h; sourceTree = "<group>"; };
 		ABAFDE4F1B075274004C7608 /* MKBResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBResultsViewController.m; sourceTree = "<group>"; };
 		ABAFDE501B075274004C7608 /* MKBResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBResultTableViewCell.h; sourceTree = "<group>"; };
@@ -60,6 +68,18 @@
 		ABAFDE531B075274004C7608 /* MKBSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBSearchViewController.m; sourceTree = "<group>"; };
 		ABAFDE541B075274004C7608 /* StarMask.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarMask.xib; sourceTree = "<group>"; };
 		ABAFDE5F1B0752C4004C7608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABAFDE651B075494004C7608 /* MKBSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBSessionManager.h; sourceTree = "<group>"; };
+		ABAFDE661B075494004C7608 /* MKBSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBSessionManager.m; sourceTree = "<group>"; };
+		ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantTests.m; sourceTree = "<group>"; };
+		ABAFDE6A1B07587F004C7608 /* MKBRestaurantResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurantResultsDataSource.h; sourceTree = "<group>"; };
+		ABAFDE6B1B07587F004C7608 /* MKBRestaurantResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantResultsDataSource.m; sourceTree = "<group>"; };
+		ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantDataSourceTests.m; sourceTree = "<group>"; };
+		ABAFDE6F1B075CE2004C7608 /* JSTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTestUtils.h; sourceTree = "<group>"; };
+		ABAFDE701B075CE2004C7608 /* JSTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTestUtils.m; sourceTree = "<group>"; };
+		ABAFDE731B075D53004C7608 /* Restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurant.json; sourceTree = "<group>"; };
+		ABAFDE751B0761BE004C7608 /* NSString+ArrayWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ArrayWriter.h"; sourceTree = "<group>"; };
+		ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ArrayWriter.m"; sourceTree = "<group>"; };
+		C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564E951585FA3B53DC57E810 /* libPods-JustEat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781EE11BA6AA008E793FEAC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B97487CEF7E87613F6011 /* Pods-JustEat.debug.xcconfig */,
+				C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABAFDE121B075245004C7608 = {
 			isa = PBXGroup;
 			children = (
 				ABAFDE1D1B075246004C7608 /* JustEat */,
 				ABAFDE371B075246004C7608 /* JustEatTests */,
 				ABAFDE1C1B075246004C7608 /* Products */,
+				781EE11BA6AA008E793FEAC5 /* Pods */,
+				FB3069FD9785C98AE2184404 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +133,14 @@
 		ABAFDE1D1B075246004C7608 /* JustEat */ = {
 			isa = PBXGroup;
 			children = (
+				ABAFDE5E1B0752C4004C7608 /* Main.storyboard */,
 				ABAFDE441B075274004C7608 /* MKBAppDelegate.h */,
 				ABAFDE451B075274004C7608 /* MKBAppDelegate.m */,
+				ABAFDE781B0761C3004C7608 /* Categories */,
+				ABAFDE641B075416004C7608 /* Networking */,
 				ABAFDE631B075303004C7608 /* Views */,
 				ABAFDE621B0752EC004C7608 /* View Controllers */,
 				ABAFDE611B0752E6004C7608 /* Model */,
-				ABAFDE5E1B0752C4004C7608 /* Main.storyboard */,
 				ABAFDE2B1B075246004C7608 /* Images.xcassets */,
 				ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */,
 				ABAFDE1E1B075246004C7608 /* Supporting Files */,
@@ -126,8 +160,12 @@
 		ABAFDE371B075246004C7608 /* JustEatTests */ = {
 			isa = PBXGroup;
 			children = (
-				ABAFDE3A1B075246004C7608 /* JustEatTests.m */,
+				ABAFDE721B075D53004C7608 /* Fixtures */,
 				ABAFDE381B075246004C7608 /* Supporting Files */,
+				ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */,
+				ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */,
+				ABAFDE6F1B075CE2004C7608 /* JSTestUtils.h */,
+				ABAFDE701B075CE2004C7608 /* JSTestUtils.m */,
 			);
 			path = JustEatTests;
 			sourceTree = "<group>";
@@ -143,12 +181,14 @@
 		ABAFDE611B0752E6004C7608 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABAFDE461B075274004C7608 /* MKBCuisineTypes.h */,
-				ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */,
+				ABAFDE6A1B07587F004C7608 /* MKBRestaurantResultsDataSource.h */,
+				ABAFDE6B1B07587F004C7608 /* MKBRestaurantResultsDataSource.m */,
+				ABAFDE461B075274004C7608 /* MKBCuisineType.h */,
+				ABAFDE471B075274004C7608 /* MKBCuisineType.m */,
 				ABAFDE481B075274004C7608 /* MKBLogo.h */,
 				ABAFDE491B075274004C7608 /* MKBLogo.m */,
-				ABAFDE4C1B075274004C7608 /* MKBRestaurants.h */,
-				ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */,
+				ABAFDE4C1B075274004C7608 /* MKBRestaurant.h */,
+				ABAFDE4D1B075274004C7608 /* MKBRestaurant.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -176,6 +216,40 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		ABAFDE641B075416004C7608 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE651B075494004C7608 /* MKBSessionManager.h */,
+				ABAFDE661B075494004C7608 /* MKBSessionManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		ABAFDE721B075D53004C7608 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE731B075D53004C7608 /* Restaurant.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		ABAFDE781B0761C3004C7608 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE751B0761BE004C7608 /* NSString+ArrayWriter.h */,
+				ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		FB3069FD9785C98AE2184404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABAFDE3E1B075246004C7608 /* Build configuration list for PBXNativeTarget "JustEat" */;
 			buildPhases = (
+				0A1661B8080B5F4DC32D85CF /* Check Pods Manifest.lock */,
 				ABAFDE171B075245004C7608 /* Sources */,
 				ABAFDE181B075245004C7608 /* Frameworks */,
 				ABAFDE191B075245004C7608 /* Resources */,
+				B3B0D644EA5C80C6CEE01A7F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,24 +343,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFDE741B075D53004C7608 /* Restaurant.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A1661B8080B5F4DC32D85CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B0D644EA5C80C6CEE01A7F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustEat/Pods-JustEat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABAFDE171B075245004C7608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFDE771B0761BE004C7608 /* NSString+ArrayWriter.m in Sources */,
 				ABAFDE211B075246004C7608 /* main.m in Sources */,
 				ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */,
 				ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */,
 				ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */,
-				ABAFDE561B075274004C7608 /* MKBCuisineTypes.m in Sources */,
+				ABAFDE561B075274004C7608 /* MKBCuisineType.m in Sources */,
 				ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */,
 				ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */,
-				ABAFDE591B075274004C7608 /* MKBRestaurants.m in Sources */,
+				ABAFDE6C1B07587F004C7608 /* MKBRestaurantResultsDataSource.m in Sources */,
+				ABAFDE671B075494004C7608 /* MKBSessionManager.m in Sources */,
+				ABAFDE591B075274004C7608 /* MKBRestaurant.m in Sources */,
 				ABAFDE5B1B075274004C7608 /* MKBResultTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +406,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAFDE3B1B075246004C7608 /* JustEatTests.m in Sources */,
+				ABAFDE6E1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m in Sources */,
+				ABAFDE691B0757DA004C7608 /* MKBRestaurantTests.m in Sources */,
+				ABAFDE711B075CE2004C7608 /* JSTestUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +526,7 @@
 		};
 		ABAFDE3F1B075246004C7608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6B97487CEF7E87613F6011 /* Pods-JustEat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JustEat/Info.plist;
@@ -421,6 +537,7 @@
 		};
 		ABAFDE401B075246004C7608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JustEat/Info.plist;
@@ -482,6 +599,7 @@
 				ABAFDE401B075246004C7608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABAFDE411B075246004C7608 /* Build configuration list for PBXNativeTarget "JustEatTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +608,7 @@
 				ABAFDE431B075246004C7608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

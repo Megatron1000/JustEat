@@ -1,0 +1,41 @@
+{
+      "Id": 45146,
+      "Name": "La Bella Vita - Collection Only",
+      "Address": "853 High Road",
+      "Postcode": "E11 1HH",
+      "City": "London",
+      "CuisineTypes": [
+        {
+          "Id": 82,
+          "Name": "Pizza",
+          "SeoName": null
+        },
+        {
+          "Id": 27,
+          "Name": "Italian",
+          "SeoName": null
+        }
+      ],
+      "Url": "http://labellavita-e11.just-eat.co.uk",
+      "IsOpenNow": true,
+      "IsSponsored": false,
+      "IsNew": false,
+      "IsTemporarilyOffline": false,
+      "ReasonWhyTemporarilyOffline": "Proactive Temp Offline - Onlined",
+      "UniqueName": "labellavita-e11",
+      "IsCloseBy": true,
+      "IsHalal": false,
+      "DefaultDisplayRank": 1,
+      "IsOpenNowForDelivery": false,
+      "IsOpenNowForCollection": true,
+      "RatingStars": 6,
+      "Logo": [
+        {
+          "StandardResolutionURL": "http://d30v2pzvrfyzpo.cloudfront.net/uk/images/restaurants/45146.gif"
+        }
+      ],
+      "Deals": [
+        
+      ],
+      "NumberOfRatings": 1
+    }

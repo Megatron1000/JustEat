@@ -9,7 +9,7 @@
 
 
 
-@interface MKBCuisineTypes : NSObject <NSCoding, NSCopying>
+@interface MKBCuisineType : NSObject <NSCoding, NSCopying>
 
 @property (nonatomic, assign) id seoName;
 @property (nonatomic, assign) double cuisineTypesIdentifier;

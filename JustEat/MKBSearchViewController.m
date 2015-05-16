@@ -10,6 +10,8 @@
 
 @interface MKBSearchViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *searchTermTextField;
+
 @end
 
 @implementation MKBSearchViewController
@@ -22,6 +24,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)findRestaurantsPressed:(id)sender
+{
+    
+}
+
+- (IBAction)gpsButtonPressed:(id)sender
+{
+    
 }
 
 @end

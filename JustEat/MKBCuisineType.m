@@ -5,7 +5,7 @@
 //  Copyright (c) 2015 Ink Global. All rights reserved.
 //
 
-#import "MKBCuisineTypes.h"
+#import "MKBCuisineType.h"
 
 
 NSString *const kMKBCuisineTypesSeoName = @"SeoName";
@@ -13,13 +13,13 @@ NSString *const kMKBCuisineTypesId = @"Id";
 NSString *const kMKBCuisineTypesName = @"Name";
 
 
-@interface MKBCuisineTypes ()
+@interface MKBCuisineType ()
 
 - (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict;
 
 @end
 
-@implementation MKBCuisineTypes
+@implementation MKBCuisineType
 
 @synthesize seoName = _seoName;
 @synthesize cuisineTypesIdentifier = _cuisineTypesIdentifier;
@@ -93,7 +93,7 @@ NSString *const kMKBCuisineTypesName = @"Name";
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    MKBCuisineTypes *copy = [[MKBCuisineTypes alloc] init];
+    MKBCuisineType *copy = [[MKBCuisineType alloc] init];
     
     if (copy) {
 

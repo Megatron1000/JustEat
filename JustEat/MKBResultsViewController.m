@@ -7,19 +7,25 @@
 //
 
 #import "MKBResultsViewController.h"
+#import "MKBRestaurantResultsDataSource.h"
 
 @interface MKBResultsViewController ()
+
+@property (nonatomic, strong) NSArray *restaurants;
+@property (nonatomic, strong) MKBRestaurantResultsDataSource *datasource;
 
 @end
 
 @implementation MKBResultsViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     
 }
