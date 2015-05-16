@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="597" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="zi7-6P-uHc">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="98"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="QFJ-RE-xst">
+                    <rect key="frame" x="100" y="0.0" width="99" height="98"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-xI-BJr">
+                    <rect key="frame" x="199" y="0.0" width="100" height="98"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-xD-Ruu">
+                    <rect key="frame" x="398" y="0.0" width="100" height="98"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="XXP-IN-AJk">
+                    <rect key="frame" x="498" y="0.0" width="99" height="98"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="LkJ-KK-drn">
+                    <rect key="frame" x="299" y="0.0" width="99" height="98"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QFJ-RE-xst" firstAttribute="leading" secondItem="zi7-6P-uHc" secondAttribute="trailing" id="7Nj-HG-R5n"/>
+                <constraint firstItem="Bdw-xI-BJr" firstAttribute="leading" secondItem="QFJ-RE-xst" secondAttribute="trailing" id="7hF-VK-kuy"/>
+                <constraint firstAttribute="trailing" secondItem="XXP-IN-AJk" secondAttribute="trailing" id="D9E-Bq-Gaw"/>
+                <constraint firstItem="gZ2-xD-Ruu" firstAttribute="leading" secondItem="LkJ-KK-drn" secondAttribute="trailing" id="FJ6-gT-UUL"/>
+                <constraint firstAttribute="bottom" secondItem="QFJ-RE-xst" secondAttribute="bottom" id="GM1-F5-Rxj"/>
+                <constraint firstAttribute="bottom" secondItem="gZ2-xD-Ruu" secondAttribute="bottom" id="I8v-uP-ii2"/>
+                <constraint firstItem="LkJ-KK-drn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LGZ-WM-xQ0"/>
+                <constraint firstItem="LkJ-KK-drn" firstAttribute="width" secondItem="gZ2-xD-Ruu" secondAttribute="width" id="Nwa-yP-EPB"/>
+                <constraint firstItem="LkJ-KK-drn" firstAttribute="leading" secondItem="Bdw-xI-BJr" secondAttribute="trailing" id="OxW-IY-YBo"/>
+                <constraint firstAttribute="bottom" secondItem="XXP-IN-AJk" secondAttribute="bottom" id="PeZ-fu-zTX"/>
+                <constraint firstItem="Bdw-xI-BJr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="R9v-lj-c2r"/>
+                <constraint firstItem="gZ2-xD-Ruu" firstAttribute="width" secondItem="XXP-IN-AJk" secondAttribute="width" id="WPe-tX-dip"/>
+                <constraint firstItem="Bdw-xI-BJr" firstAttribute="width" secondItem="LkJ-KK-drn" secondAttribute="width" id="WnC-Vy-fxJ"/>
+                <constraint firstItem="QFJ-RE-xst" firstAttribute="width" secondItem="Bdw-xI-BJr" secondAttribute="width" id="X8Q-tg-B6g"/>
+                <constraint firstItem="XXP-IN-AJk" firstAttribute="leading" secondItem="gZ2-xD-Ruu" secondAttribute="trailing" id="XY7-6A-me7"/>
+                <constraint firstItem="zi7-6P-uHc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aRV-Qa-vBA"/>
+                <constraint firstAttribute="bottom" secondItem="Bdw-xI-BJr" secondAttribute="bottom" id="bVb-z6-w2P"/>
+                <constraint firstItem="QFJ-RE-xst" firstAttribute="width" secondItem="zi7-6P-uHc" secondAttribute="width" id="gqY-gn-Ta2"/>
+                <constraint firstAttribute="bottom" secondItem="LkJ-KK-drn" secondAttribute="bottom" id="hcY-an-0yc"/>
+                <constraint firstItem="XXP-IN-AJk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kcS-8x-PgA"/>
+                <constraint firstItem="zi7-6P-uHc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nTC-qO-Ypj"/>
+                <constraint firstItem="QFJ-RE-xst" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t83-ut-8b3"/>
+                <constraint firstAttribute="bottom" secondItem="zi7-6P-uHc" secondAttribute="bottom" id="yDg-3v-qKZ"/>
+                <constraint firstItem="gZ2-xD-Ruu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yOa-Ct-gjc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="358.5" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star" width="512" height="512"/>
+    </resources>
+</document>

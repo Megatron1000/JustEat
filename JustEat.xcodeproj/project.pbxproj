@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		ABAFDE211B075246004C7608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE201B075246004C7608 /* main.m */; };
-		ABAFDE241B075246004C7608 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE231B075246004C7608 /* AppDelegate.m */; };
-		ABAFDE271B075246004C7608 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE261B075246004C7608 /* ViewController.m */; };
-		ABAFDE2A1B075246004C7608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE281B075246004C7608 /* Main.storyboard */; };
 		ABAFDE2C1B075246004C7608 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2B1B075246004C7608 /* Images.xcassets */; };
 		ABAFDE2F1B075246004C7608 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */; };
 		ABAFDE3B1B075246004C7608 /* JustEatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE3A1B075246004C7608 /* JustEatTests.m */; };
+		ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE451B075274004C7608 /* MKBAppDelegate.m */; };
+		ABAFDE561B075274004C7608 /* MKBCuisineTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */; };
+		ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE491B075274004C7608 /* MKBLogo.m */; };
+		ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4B1B075274004C7608 /* MKBRatingsView.m */; };
+		ABAFDE591B075274004C7608 /* MKBRestaurants.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */; };
+		ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE4F1B075274004C7608 /* MKBResultsViewController.m */; };
+		ABAFDE5B1B075274004C7608 /* MKBResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */; };
+		ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE531B075274004C7608 /* MKBSearchViewController.m */; };
+		ABAFDE5D1B075274004C7608 /* StarMask.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE541B075274004C7608 /* StarMask.xib */; };
+		ABAFDE601B0752C4004C7608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE5E1B0752C4004C7608 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +37,29 @@
 		ABAFDE1B1B075246004C7608 /* JustEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFDE1F1B075246004C7608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAFDE201B075246004C7608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABAFDE221B075246004C7608 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ABAFDE231B075246004C7608 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABAFDE251B075246004C7608 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ABAFDE261B075246004C7608 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ABAFDE291B075246004C7608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABAFDE2B1B075246004C7608 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABAFDE2E1B075246004C7608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ABAFDE341B075246004C7608 /* JustEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFDE391B075246004C7608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAFDE3A1B075246004C7608 /* JustEatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustEatTests.m; sourceTree = "<group>"; };
+		ABAFDE441B075274004C7608 /* MKBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBAppDelegate.h; sourceTree = "<group>"; };
+		ABAFDE451B075274004C7608 /* MKBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBAppDelegate.m; sourceTree = "<group>"; };
+		ABAFDE461B075274004C7608 /* MKBCuisineTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBCuisineTypes.h; sourceTree = "<group>"; };
+		ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBCuisineTypes.m; sourceTree = "<group>"; };
+		ABAFDE481B075274004C7608 /* MKBLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBLogo.h; sourceTree = "<group>"; };
+		ABAFDE491B075274004C7608 /* MKBLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBLogo.m; sourceTree = "<group>"; };
+		ABAFDE4A1B075274004C7608 /* MKBRatingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRatingsView.h; sourceTree = "<group>"; };
+		ABAFDE4B1B075274004C7608 /* MKBRatingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRatingsView.m; sourceTree = "<group>"; };
+		ABAFDE4C1B075274004C7608 /* MKBRestaurants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurants.h; sourceTree = "<group>"; };
+		ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurants.m; sourceTree = "<group>"; };
+		ABAFDE4E1B075274004C7608 /* MKBResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBResultsViewController.h; sourceTree = "<group>"; };
+		ABAFDE4F1B075274004C7608 /* MKBResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBResultsViewController.m; sourceTree = "<group>"; };
+		ABAFDE501B075274004C7608 /* MKBResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBResultTableViewCell.h; sourceTree = "<group>"; };
+		ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBResultTableViewCell.m; sourceTree = "<group>"; };
+		ABAFDE521B075274004C7608 /* MKBSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBSearchViewController.h; sourceTree = "<group>"; };
+		ABAFDE531B075274004C7608 /* MKBSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBSearchViewController.m; sourceTree = "<group>"; };
+		ABAFDE541B075274004C7608 /* StarMask.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarMask.xib; sourceTree = "<group>"; };
+		ABAFDE5F1B0752C4004C7608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +101,12 @@
 		ABAFDE1D1B075246004C7608 /* JustEat */ = {
 			isa = PBXGroup;
 			children = (
-				ABAFDE221B075246004C7608 /* AppDelegate.h */,
-				ABAFDE231B075246004C7608 /* AppDelegate.m */,
-				ABAFDE251B075246004C7608 /* ViewController.h */,
-				ABAFDE261B075246004C7608 /* ViewController.m */,
-				ABAFDE281B075246004C7608 /* Main.storyboard */,
+				ABAFDE441B075274004C7608 /* MKBAppDelegate.h */,
+				ABAFDE451B075274004C7608 /* MKBAppDelegate.m */,
+				ABAFDE631B075303004C7608 /* Views */,
+				ABAFDE621B0752EC004C7608 /* View Controllers */,
+				ABAFDE611B0752E6004C7608 /* Model */,
+				ABAFDE5E1B0752C4004C7608 /* Main.storyboard */,
 				ABAFDE2B1B075246004C7608 /* Images.xcassets */,
 				ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */,
 				ABAFDE1E1B075246004C7608 /* Supporting Files */,
@@ -117,6 +138,42 @@
 				ABAFDE391B075246004C7608 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABAFDE611B0752E6004C7608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE461B075274004C7608 /* MKBCuisineTypes.h */,
+				ABAFDE471B075274004C7608 /* MKBCuisineTypes.m */,
+				ABAFDE481B075274004C7608 /* MKBLogo.h */,
+				ABAFDE491B075274004C7608 /* MKBLogo.m */,
+				ABAFDE4C1B075274004C7608 /* MKBRestaurants.h */,
+				ABAFDE4D1B075274004C7608 /* MKBRestaurants.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ABAFDE621B0752EC004C7608 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE521B075274004C7608 /* MKBSearchViewController.h */,
+				ABAFDE531B075274004C7608 /* MKBSearchViewController.m */,
+				ABAFDE4E1B075274004C7608 /* MKBResultsViewController.h */,
+				ABAFDE4F1B075274004C7608 /* MKBResultsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ABAFDE631B075303004C7608 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABAFDE501B075274004C7608 /* MKBResultTableViewCell.h */,
+				ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */,
+				ABAFDE4A1B075274004C7608 /* MKBRatingsView.h */,
+				ABAFDE4B1B075274004C7608 /* MKBRatingsView.m */,
+				ABAFDE541B075274004C7608 /* StarMask.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAFDE2A1B075246004C7608 /* Main.storyboard in Resources */,
 				ABAFDE2F1B075246004C7608 /* LaunchScreen.xib in Resources */,
+				ABAFDE5D1B075274004C7608 /* StarMask.xib in Resources */,
 				ABAFDE2C1B075246004C7608 /* Images.xcassets in Resources */,
+				ABAFDE601B0752C4004C7608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAFDE271B075246004C7608 /* ViewController.m in Sources */,
-				ABAFDE241B075246004C7608 /* AppDelegate.m in Sources */,
 				ABAFDE211B075246004C7608 /* main.m in Sources */,
+				ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */,
+				ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */,
+				ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */,
+				ABAFDE561B075274004C7608 /* MKBCuisineTypes.m in Sources */,
+				ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */,
+				ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */,
+				ABAFDE591B075274004C7608 /* MKBRestaurants.m in Sources */,
+				ABAFDE5B1B075274004C7608 /* MKBResultTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +308,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ABAFDE281B075246004C7608 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABAFDE291B075246004C7608 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ABAFDE2E1B075246004C7608 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		ABAFDE5E1B0752C4004C7608 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABAFDE5F1B0752C4004C7608 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

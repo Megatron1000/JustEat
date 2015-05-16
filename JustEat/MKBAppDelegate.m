@@ -1,22 +1,22 @@
 //
 //  AppDelegate.m
-//  JustEat
+//  Just Eat Test
 //
 //  Created by Mark Bridges on 16/05/2015.
 //  Copyright (c) 2015 Mark Bridges. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MKBAppDelegate.h"
 
-@interface AppDelegate ()
+@interface MKBAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MKBAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
     return YES;
 }
 

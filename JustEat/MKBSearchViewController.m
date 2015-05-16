@@ -1,22 +1,22 @@
 //
-//  ViewController.m
-//  JustEat
+//  MKBSearchViewController.m
+//  Just Eat Test
 //
 //  Created by Mark Bridges on 16/05/2015.
 //  Copyright (c) 2015 Mark Bridges. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MKBSearchViewController.h"
 
-@interface ViewController ()
+@interface MKBSearchViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MKBSearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
