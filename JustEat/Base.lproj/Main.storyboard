@@ -28,11 +28,11 @@
                                     <segue destination="mrl-pK-xVt" kind="show" id="NFD-nA-bLu"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-um-cnW" userLabel="TextField &amp; GPS Button View">
-                                <rect key="frame" x="227" y="136" width="147" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-um-cnW" userLabel="TextField &amp; GPS Button View" customClass="UIViewRounded">
+                                <rect key="frame" x="233" y="136" width="135" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your postcode" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-YN-Jv2">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your postcode" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-YN-Jv2">
+                                        <rect key="frame" x="3" y="0.0" width="98" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -40,7 +40,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBp-fy-cGX" userLabel="GPS Button">
-                                        <rect key="frame" x="117" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="103" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pBp-fy-cGX" secondAttribute="height" multiplier="1:1" id="5Ex-ZT-rGF"/>
                                             <constraint firstAttribute="width" constant="30" id="Jdj-Vu-uY1"/>
@@ -61,8 +61,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="pBp-fy-cGX" secondAttribute="trailing" id="1ne-Xn-aW4"/>
-                                    <constraint firstItem="s0y-YN-Jv2" firstAttribute="leading" secondItem="TH6-um-cnW" secondAttribute="leading" id="2nG-CF-Xgo"/>
+                                    <constraint firstAttribute="trailing" secondItem="pBp-fy-cGX" secondAttribute="trailing" constant="2" id="1ne-Xn-aW4"/>
+                                    <constraint firstItem="s0y-YN-Jv2" firstAttribute="leading" secondItem="TH6-um-cnW" secondAttribute="leading" constant="3" id="2nG-CF-Xgo"/>
                                     <constraint firstAttribute="bottom" secondItem="s0y-YN-Jv2" secondAttribute="bottom" id="8Gr-6k-RS7"/>
                                     <constraint firstItem="pBp-fy-cGX" firstAttribute="top" secondItem="TH6-um-cnW" secondAttribute="top" id="dh7-Uk-mrH"/>
                                     <constraint firstItem="pBp-fy-cGX" firstAttribute="leading" secondItem="s0y-YN-Jv2" secondAttribute="trailing" constant="2" id="oeO-vP-D33"/>
@@ -106,33 +106,40 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8mm-k6-2NF" id="1Fh-E2-ge8">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plateHolder" translatesAutoresizingMaskIntoConstraints="NO" id="y7L-Lf-kwk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plateHolder" translatesAutoresizingMaskIntoConstraints="NO" id="y7L-Lf-kwk" customClass="UImageViewRounded">
                                             <rect key="frame" x="13" y="13" width="63" height="63"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="y7L-Lf-kwk" secondAttribute="height" multiplier="1:1" id="yHB-DX-Hv3"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KF-35-u7K">
-                                            <rect key="frame" x="81" y="42" width="66" height="17"/>
+                                            <rect key="frame" x="81" y="37" width="66" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-hT-FWy" customClass="MKBRatingsView">
-                                            <rect key="frame" x="81" y="61" width="116" height="15"/>
+                                            <rect key="frame" x="81" y="56" width="115" height="20"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="115" id="7qe-nw-KvE"/>
                                                 <constraint firstAttribute="width" secondItem="SgO-hT-FWy" secondAttribute="height" multiplier="109:14" priority="750" id="87x-FA-WQM"/>
+                                                <constraint firstAttribute="height" constant="20" id="Xqs-xr-SN6"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="87x-FA-WQM"/>
+                                                </mask>
+                                            </variation>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Burger King" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM3-zQ-QtY">
-                                            <rect key="frame" x="81" y="13" width="91" height="27"/>
+                                            <rect key="frame" x="81" y="13" width="91" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N5-md-v3O">
-                                            <rect key="frame" x="205" y="61" width="14" height="15"/>
+                                            <rect key="frame" x="204" y="56" width="14" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>

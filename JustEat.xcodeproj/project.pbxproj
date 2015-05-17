@@ -33,6 +33,9 @@
 		ABAFDE811B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE801B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m */; };
 		ABAFDE831B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */; };
 		ABAFDE851B08BF18004C7608 /* RestaurantFullResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */; };
+		ABAFDE8B1B08C1EB004C7608 /* UIView+WellRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */; };
+		ABAFDE8E1B08C2C2004C7608 /* UIViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */; };
+		ABAFDE911B08C2EF004C7608 /* UImageViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,12 @@
 		ABAFDE801B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantsResponseSerializer.m; sourceTree = "<group>"; };
 		ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantResponseSerializerTests.m; sourceTree = "<group>"; };
 		ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RestaurantFullResponse.json; sourceTree = "<group>"; };
+		ABAFDE891B08C1EB004C7608 /* UIView+WellRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WellRounded.h"; sourceTree = "<group>"; };
+		ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WellRounded.m"; sourceTree = "<group>"; };
+		ABAFDE8C1B08C2C2004C7608 /* UIViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewRounded.h; sourceTree = "<group>"; };
+		ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewRounded.m; sourceTree = "<group>"; };
+		ABAFDE8F1B08C2EF004C7608 /* UImageViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UImageViewRounded.h; sourceTree = "<group>"; };
+		ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImageViewRounded.m; sourceTree = "<group>"; };
 		B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests.release.xcconfig"; sourceTree = "<group>"; };
 		C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +235,10 @@
 		ABAFDE631B075303004C7608 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ABAFDE8C1B08C2C2004C7608 /* UIViewRounded.h */,
+				ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */,
+				ABAFDE8F1B08C2EF004C7608 /* UImageViewRounded.h */,
+				ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */,
 				ABAFDE501B075274004C7608 /* MKBResultTableViewCell.h */,
 				ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */,
 				ABAFDE4A1B075274004C7608 /* MKBRatingsView.h */,
@@ -260,6 +273,8 @@
 			children = (
 				ABAFDE751B0761BE004C7608 /* NSString+ArrayWriter.h */,
 				ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */,
+				ABAFDE891B08C1EB004C7608 /* UIView+WellRounded.h */,
+				ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -456,13 +471,16 @@
 				ABAFDE7D1B08A3B4004C7608 /* MKBPostCodeFinder.m in Sources */,
 				ABAFDE811B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m in Sources */,
 				ABAFDE211B075246004C7608 /* main.m in Sources */,
+				ABAFDE8E1B08C2C2004C7608 /* UIViewRounded.m in Sources */,
 				ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */,
+				ABAFDE911B08C2EF004C7608 /* UImageViewRounded.m in Sources */,
 				ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */,
 				ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */,
 				ABAFDE561B075274004C7608 /* MKBCuisineType.m in Sources */,
 				ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */,
 				ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */,
 				ABAFDE6C1B07587F004C7608 /* MKBRestaurantResultsDataSource.m in Sources */,
+				ABAFDE8B1B08C1EB004C7608 /* UIView+WellRounded.m in Sources */,
 				ABAFDE671B075494004C7608 /* MKBSessionManager.m in Sources */,
 				ABAFDE591B075274004C7608 /* MKBRestaurant.m in Sources */,
 				ABAFDE5B1B075274004C7608 /* MKBResultTableViewCell.m in Sources */,

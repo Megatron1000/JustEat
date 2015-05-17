@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD32EB929069B886FBA852E3"
-               BuildableName = "libPods-JustEat-SVProgressHUD.a"
-               BlueprintName = "Pods-JustEat-SVProgressHUD"
+               BlueprintIdentifier = "2E4E4985DF797FA0D82DA277"
+               BuildableName = "libPods-JustEat-PureLayout.a"
+               BlueprintName = "Pods-JustEat-PureLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

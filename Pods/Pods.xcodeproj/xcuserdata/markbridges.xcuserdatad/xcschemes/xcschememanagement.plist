@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JustEat-PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JustEat-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F69C9188F59CD16C5F27472</key>
+		<key>2E4E4985DF797FA0D82DA277</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22A604D3AB8813675871288A</key>
+		<key>32E6F3073567DFBC2300A63A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E1409801C3CB33609A50825</key>
+		<key>468F65709201F9320BCC3C04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B47C2AF6B5FB832E7E9565E</key>
+		<key>A07250EBE9A5ECE680855A85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDDDB56A57473DDFA01001A0</key>
+		<key>BD32EB929069B886FBA852E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F84EB6E2AC018DB9EA5DAB7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
