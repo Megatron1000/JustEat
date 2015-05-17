@@ -22,8 +22,9 @@ NSString *const kMKBLogoStandardResolutionURL = @"StandardResolutionURL";
 {
     self = [super init];
     
-    if(self && [dict isKindOfClass:[NSDictionary class]]) {
-            self.standardResolutionURL = [self objectOrNilForKey:kMKBLogoStandardResolutionURL fromDictionary:dict];
+    if(self && [dict isKindOfClass:[NSDictionary class]])
+    {
+        _standardResolutionURL = [self objectOrNilForKey:kMKBLogoStandardResolutionURL fromDictionary:dict];
     }
     
     return self;

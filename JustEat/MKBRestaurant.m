@@ -35,11 +35,11 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
     
     if(self && [dict isKindOfClass:[NSDictionary class]])
     {
-        self.ratingStars = [[self objectOrNilForKey:kMKBRestaurantsRatingStars fromDictionary:dict] doubleValue];
-        self.name = [self objectOrNilForKey:kMKBRestaurantsName fromDictionary:dict];
-        self.numberOfRatings = [[self objectOrNilForKey:kMKBRestaurantsNumberOfRatings fromDictionary:dict] doubleValue];
+        _ratingStars = [[self objectOrNilForKey:kMKBRestaurantsRatingStars fromDictionary:dict] doubleValue];
+        _name = [self objectOrNilForKey:kMKBRestaurantsName fromDictionary:dict];
+        _numberOfRatings = [[self objectOrNilForKey:kMKBRestaurantsNumberOfRatings fromDictionary:dict] doubleValue];
         
-        NSObject *receivedMKBCuisineTypes = [dict objectForKey:kMKBRestaurantsCuisineTypes];
+        NSObject *receivedMKBCuisineTypes = dict[kMKBRestaurantsCuisineTypes];
         NSMutableArray *parsedMKBCuisineTypes = [NSMutableArray array];
         if ([receivedMKBCuisineTypes isKindOfClass:[NSArray class]])
         {
@@ -52,9 +52,9 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
             }
         }
         
-        self.cuisineTypes = [NSArray arrayWithArray:parsedMKBCuisineTypes];
+        _cuisineTypes = [NSArray arrayWithArray:parsedMKBCuisineTypes];
 
-        NSObject *receivedMKBLogo = [dict objectForKey:kMKBRestaurantsLogo];
+        NSObject *receivedMKBLogo = dict[kMKBRestaurantsLogo];
         NSMutableArray *parsedMKBLogo = [NSMutableArray array];
         if ([receivedMKBLogo isKindOfClass:[NSArray class]]) {
             for (NSDictionary *item in (NSArray *)receivedMKBLogo)
@@ -66,7 +66,7 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
             }
         }
         
-        self.logo = [NSArray arrayWithArray:parsedMKBLogo];
+        _logo = [NSArray arrayWithArray:parsedMKBLogo];
     }
     
     return self;

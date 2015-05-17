@@ -23,7 +23,7 @@
     
     if ([responseObject isKindOfClass:[NSDictionary class]])
     {
-        NSArray *restaurantDictionaries = [responseObject objectForKey:@"Restaurants"];
+        NSArray *restaurantDictionaries = responseObject[@"Restaurants"];
         
         for (NSDictionary *restaurantDictionary in restaurantDictionaries)
         {

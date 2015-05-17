@@ -1,19 +1,19 @@
 //
-//  UImageViewRounded.m
+//  UIViewRounded.m
 //  JustEat
 //
 //  Created by Mark Bridges on 17/05/2015.
 //  Copyright (c) 2015 Mark Bridges. All rights reserved.
 //
 
-#import "UImageViewRounded.h"
+#import "MKBViewRounded.h"
 #import "UIView+WellRounded.h"
 
-@implementation UImageViewRounded
+@implementation MKBViewRounded
 
-- (void)awakeFromNib
+- (void)drawRect:(CGRect)rect
 {
-    [super awakeFromNib];
+    [super drawRect:rect];
     
     [self addRoundingAndBorder];
 }

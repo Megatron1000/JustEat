@@ -10,7 +10,7 @@
 
 @interface MKBLogo : NSObject
 
-@property (nonatomic, strong) NSString *standardResolutionURL;
+@property (nonatomic, copy) NSString *standardResolutionURL;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

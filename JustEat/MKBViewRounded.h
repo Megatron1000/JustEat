@@ -10,6 +10,6 @@
 
 IB_DESIGNABLE
 
-@interface UIViewRounded : UIView
+@interface MKBViewRounded : UIView
 
 @end

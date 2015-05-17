@@ -22,8 +22,9 @@ NSString *const kMKBCuisineTypesName = @"Name";
 {
     self = [super init];
     
-    if(self && [dict isKindOfClass:[NSDictionary class]]) {
-            self.name = [self objectOrNilForKey:kMKBCuisineTypesName fromDictionary:dict];
+    if(self && [dict isKindOfClass:[NSDictionary class]])
+    {
+            _name = [self objectOrNilForKey:kMKBCuisineTypesName fromDictionary:dict];
     }
     
     return self;

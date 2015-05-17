@@ -11,6 +11,6 @@
 
 @interface MKBRestaurantResultsDataSource : NSObject <UITableViewDataSource>
 
-@property (nonatomic, weak) NSArray *restaurants;
+@property (nonatomic, copy) NSArray *restaurants;
 
 @end

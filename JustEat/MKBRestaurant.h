@@ -12,10 +12,10 @@
 @interface MKBRestaurant : NSObject
 
 @property (nonatomic, assign) double ratingStars;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) int numberOfRatings;
-@property (nonatomic, strong) NSArray *cuisineTypes;
-@property (nonatomic, strong) NSArray *logo;
+@property (nonatomic, copy) NSArray *cuisineTypes;
+@property (nonatomic, copy) NSArray *logo;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

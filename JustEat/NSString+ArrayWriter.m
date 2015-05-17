@@ -22,11 +22,11 @@
         NSMutableArray *mutableArray = [[NSMutableArray alloc]initWithArray:array];
         if (mutableArray.count == 1)
         {
-            [outputString appendString:[mutableArray objectAtIndex:0]];
+            [outputString appendString:mutableArray.firstObject];
         }
         else
         {
-            [outputString appendString:[mutableArray objectAtIndex:0]];
+            [outputString appendString:mutableArray.firstObject];
             [mutableArray removeObjectAtIndex:0];
             for (NSString *currentString in mutableArray)
             {

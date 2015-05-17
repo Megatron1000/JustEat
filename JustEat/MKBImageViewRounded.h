@@ -10,6 +10,6 @@
 
 IB_DESIGNABLE
 
-@interface UImageViewRounded : UIImageView
+@interface MKBImageViewRounded : UIImageView
 
 @end

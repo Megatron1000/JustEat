@@ -12,7 +12,7 @@
 
 - (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict
 {
-    id object = [dict objectForKey:aKey];
+    id object = dict[aKey];
     return [object isEqual:[NSNull null]] ? nil : object;
 }
 

@@ -10,7 +10,7 @@
 
 @interface MKBCuisineType : NSObject
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 

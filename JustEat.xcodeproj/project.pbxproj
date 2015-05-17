@@ -34,8 +34,8 @@
 		ABAFDE831B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */; };
 		ABAFDE851B08BF18004C7608 /* RestaurantFullResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */; };
 		ABAFDE8B1B08C1EB004C7608 /* UIView+WellRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */; };
-		ABAFDE8E1B08C2C2004C7608 /* UIViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */; };
-		ABAFDE911B08C2EF004C7608 /* UImageViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */; };
+		ABAFDE8E1B08C2C2004C7608 /* MKBViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8D1B08C2C2004C7608 /* MKBViewRounded.m */; };
+		ABAFDE911B08C2EF004C7608 /* MKBImageViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE901B08C2EF004C7608 /* MKBImageViewRounded.m */; };
 		ABAFDE941B08D705004C7608 /* UIColor+JustEatScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE931B08D705004C7608 /* UIColor+JustEatScheme.m */; };
 		ABAFDE971B08E00A004C7608 /* NSObject+NilKey.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE961B08E00A004C7608 /* NSObject+NilKey.m */; };
 /* End PBXBuildFile section */
@@ -99,10 +99,10 @@
 		ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RestaurantFullResponse.json; sourceTree = "<group>"; };
 		ABAFDE891B08C1EB004C7608 /* UIView+WellRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WellRounded.h"; sourceTree = "<group>"; };
 		ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WellRounded.m"; sourceTree = "<group>"; };
-		ABAFDE8C1B08C2C2004C7608 /* UIViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewRounded.h; sourceTree = "<group>"; };
-		ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewRounded.m; sourceTree = "<group>"; };
-		ABAFDE8F1B08C2EF004C7608 /* UImageViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UImageViewRounded.h; sourceTree = "<group>"; };
-		ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImageViewRounded.m; sourceTree = "<group>"; };
+		ABAFDE8C1B08C2C2004C7608 /* MKBViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBViewRounded.h; sourceTree = "<group>"; };
+		ABAFDE8D1B08C2C2004C7608 /* MKBViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBViewRounded.m; sourceTree = "<group>"; };
+		ABAFDE8F1B08C2EF004C7608 /* MKBImageViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBImageViewRounded.h; sourceTree = "<group>"; };
+		ABAFDE901B08C2EF004C7608 /* MKBImageViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBImageViewRounded.m; sourceTree = "<group>"; };
 		ABAFDE921B08D705004C7608 /* UIColor+JustEatScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JustEatScheme.h"; sourceTree = "<group>"; };
 		ABAFDE931B08D705004C7608 /* UIColor+JustEatScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JustEatScheme.m"; sourceTree = "<group>"; };
 		ABAFDE951B08E00A004C7608 /* NSObject+NilKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NilKey.h"; sourceTree = "<group>"; };
@@ -241,10 +241,10 @@
 		ABAFDE631B075303004C7608 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ABAFDE8C1B08C2C2004C7608 /* UIViewRounded.h */,
-				ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */,
-				ABAFDE8F1B08C2EF004C7608 /* UImageViewRounded.h */,
-				ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */,
+				ABAFDE8C1B08C2C2004C7608 /* MKBViewRounded.h */,
+				ABAFDE8D1B08C2C2004C7608 /* MKBViewRounded.m */,
+				ABAFDE8F1B08C2EF004C7608 /* MKBImageViewRounded.h */,
+				ABAFDE901B08C2EF004C7608 /* MKBImageViewRounded.m */,
 				ABAFDE501B075274004C7608 /* MKBResultTableViewCell.h */,
 				ABAFDE511B075274004C7608 /* MKBResultTableViewCell.m */,
 				ABAFDE4A1B075274004C7608 /* MKBRatingsView.h */,
@@ -355,6 +355,7 @@
 		ABAFDE131B075245004C7608 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MKB;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Mark Bridges";
 				TargetAttributes = {
@@ -481,9 +482,9 @@
 				ABAFDE7D1B08A3B4004C7608 /* MKBPostCodeFinder.m in Sources */,
 				ABAFDE811B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m in Sources */,
 				ABAFDE211B075246004C7608 /* main.m in Sources */,
-				ABAFDE8E1B08C2C2004C7608 /* UIViewRounded.m in Sources */,
+				ABAFDE8E1B08C2C2004C7608 /* MKBViewRounded.m in Sources */,
 				ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */,
-				ABAFDE911B08C2EF004C7608 /* UImageViewRounded.m in Sources */,
+				ABAFDE911B08C2EF004C7608 /* MKBImageViewRounded.m in Sources */,
 				ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */,
 				ABAFDE5A1B075274004C7608 /* MKBResultsViewController.m in Sources */,
 				ABAFDE941B08D705004C7608 /* UIColor+JustEatScheme.m in Sources */,

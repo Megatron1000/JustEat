@@ -25,6 +25,11 @@
 
 #pragma mark Superclass Methods
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController respondsToSelector:@selector(setSearchTerm:)])
