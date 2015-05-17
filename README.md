@@ -9,7 +9,7 @@ I spent approximately 4-5 hours on the test. If I had more time I would have inc
 
 The most useful feature I think that was added to Objective-C in the last release was Swift; although technical it's not a feature of Objective-C itself, of course. Even though I don't feel it's mature enough for a large scale project yet it does open up many new patterns as well as provide some relief from its bracket obsessed, header filled counterpart.
 
-For example it's considerably more please to write
+For example it's considerably more pleasing to write
 
 ```Swift
 let name = "Mark" + "Bridges"
