@@ -11,5 +11,6 @@
 @interface MKBResultsViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *searchTerm;
+@property (nonatomic, strong) NSArray *restaurants;
 
 @end

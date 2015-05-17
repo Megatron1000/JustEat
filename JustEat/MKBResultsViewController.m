@@ -11,8 +11,7 @@
 
 @interface MKBResultsViewController ()
 
-@property (nonatomic, strong) NSArray *restaurants;
-@property (nonatomic, strong) MKBRestaurantResultsDataSource *datasource;
+@property (strong, nonatomic) IBOutlet MKBRestaurantResultsDataSource *dataSource;
 
 @end
 
@@ -30,6 +29,13 @@
     
 }
 
+- (void)setRestaurants:(NSArray *)restaurants
+{
+    self.dataSource.restaurants = restaurants;
+    [self.tableView reloadData];
+    
+    _restaurants = restaurants;
+}
 
 
 @end

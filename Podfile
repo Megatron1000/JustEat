@@ -8,6 +8,7 @@ pod 'SVProgressHUD', '~> 1.1'
 end
 
 target 'JustEatTests' do
+pod 'OCMock', '~> 3.1'
 
 end
 

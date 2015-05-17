@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Sainsbury's. All rights reserved.
 //
 
-#import "JSTestUtils.h"
+#import "MKBTestUtils.h"
 
-@implementation JSTestUtils
+@implementation MKBTestUtils
 
 + (NSBundle *)testBundle
 {

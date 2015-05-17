@@ -20,14 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - OCMock (3.1.2)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - OCMock (~> 3.1)
   - SVProgressHUD (~> 1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.37.1

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JSTestUtils : NSObject
+@interface MKBTestUtils : NSObject
 
 + (NSBundle *)testBundle;
 + (NSString *)loadJSONFromBundle:(NSBundle *)bundle withName:(NSString *)name;

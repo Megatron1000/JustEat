@@ -80,6 +80,13 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
     return [NSString stringWithArray:cuisineTypes];
 }
 
+- (NSString*)numberOfRatingsFormattedString
+{
+    NSString *ratingsString = [NSString stringWithFormat:@"(%d)", self.numberOfRatings];
+    
+    return ratingsString;
+}
+
 - (NSURL*)logoImageURL
 {
     MKBLogo *firstLogo = self.logo.firstObject;

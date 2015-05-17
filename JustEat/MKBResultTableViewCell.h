@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cuisinesLabel;
 @property (weak, nonatomic) IBOutlet MKBRatingsView *ratingsView;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfRatingsLabel;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		564E951585FA3B53DC57E810 /* libPods-JustEat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */; };
+		759F102F9D97C20175891FD8 /* libPods-JustEatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21679075DDFFE0C8BF09538E /* libPods-JustEatTests.a */; };
 		ABAFDE211B075246004C7608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE201B075246004C7608 /* main.m */; };
 		ABAFDE2C1B075246004C7608 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2B1B075246004C7608 /* Images.xcassets */; };
 		ABAFDE2F1B075246004C7608 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE2D1B075246004C7608 /* LaunchScreen.xib */; };
@@ -24,10 +25,10 @@
 		ABAFDE671B075494004C7608 /* MKBSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE661B075494004C7608 /* MKBSessionManager.m */; };
 		ABAFDE691B0757DA004C7608 /* MKBRestaurantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */; };
 		ABAFDE6C1B07587F004C7608 /* MKBRestaurantResultsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE6B1B07587F004C7608 /* MKBRestaurantResultsDataSource.m */; };
-		ABAFDE6E1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */; };
-		ABAFDE711B075CE2004C7608 /* JSTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE701B075CE2004C7608 /* JSTestUtils.m */; };
+		ABAFDE711B075CE2004C7608 /* MKBTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE701B075CE2004C7608 /* MKBTestUtils.m */; };
 		ABAFDE741B075D53004C7608 /* Restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE731B075D53004C7608 /* Restaurant.json */; };
 		ABAFDE771B0761BE004C7608 /* NSString+ArrayWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */; };
+		ABAFDE7A1B089CFF004C7608 /* MKBResultsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JustEat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6B97487CEF7E87613F6011 /* Pods-JustEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.debug.xcconfig"; sourceTree = "<group>"; };
+		21679075DDFFE0C8BF09538E /* libPods-JustEatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JustEatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B3E4E04F1866A6D1483CA7 /* Pods-JustEatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABAFDE1B1B075246004C7608 /* JustEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFDE1F1B075246004C7608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABAFDE201B075246004C7608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,12 +76,13 @@
 		ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantTests.m; sourceTree = "<group>"; };
 		ABAFDE6A1B07587F004C7608 /* MKBRestaurantResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurantResultsDataSource.h; sourceTree = "<group>"; };
 		ABAFDE6B1B07587F004C7608 /* MKBRestaurantResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantResultsDataSource.m; sourceTree = "<group>"; };
-		ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantDataSourceTests.m; sourceTree = "<group>"; };
-		ABAFDE6F1B075CE2004C7608 /* JSTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTestUtils.h; sourceTree = "<group>"; };
-		ABAFDE701B075CE2004C7608 /* JSTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTestUtils.m; sourceTree = "<group>"; };
+		ABAFDE6F1B075CE2004C7608 /* MKBTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBTestUtils.h; sourceTree = "<group>"; };
+		ABAFDE701B075CE2004C7608 /* MKBTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBTestUtils.m; sourceTree = "<group>"; };
 		ABAFDE731B075D53004C7608 /* Restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurant.json; sourceTree = "<group>"; };
 		ABAFDE751B0761BE004C7608 /* NSString+ArrayWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ArrayWriter.h"; sourceTree = "<group>"; };
 		ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ArrayWriter.m"; sourceTree = "<group>"; };
+		ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBResultsViewControllerTests.m; sourceTree = "<group>"; };
+		B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests.release.xcconfig"; sourceTree = "<group>"; };
 		C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759F102F9D97C20175891FD8 /* libPods-JustEatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,8 @@
 			children = (
 				1C6B97487CEF7E87613F6011 /* Pods-JustEat.debug.xcconfig */,
 				C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */,
+				62B3E4E04F1866A6D1483CA7 /* Pods-JustEatTests.debug.xcconfig */,
+				B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -163,9 +170,9 @@
 				ABAFDE721B075D53004C7608 /* Fixtures */,
 				ABAFDE381B075246004C7608 /* Supporting Files */,
 				ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */,
-				ABAFDE6D1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m */,
-				ABAFDE6F1B075CE2004C7608 /* JSTestUtils.h */,
-				ABAFDE701B075CE2004C7608 /* JSTestUtils.m */,
+				ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */,
+				ABAFDE6F1B075CE2004C7608 /* MKBTestUtils.h */,
+				ABAFDE701B075CE2004C7608 /* MKBTestUtils.m */,
 			);
 			path = JustEatTests;
 			sourceTree = "<group>";
@@ -246,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				0602D2A3CA6CB839C237FC53 /* libPods-JustEat.a */,
+				21679075DDFFE0C8BF09538E /* libPods-JustEatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABAFDE411B075246004C7608 /* Build configuration list for PBXNativeTarget "JustEatTests" */;
 			buildPhases = (
+				570C4DB32D67E933AA2CFD39 /* Check Pods Manifest.lock */,
 				ABAFDE301B075246004C7608 /* Sources */,
 				ABAFDE311B075246004C7608 /* Frameworks */,
 				ABAFDE321B075246004C7608 /* Resources */,
+				ADB04473DDD2AFF5F4CC8F2D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,6 +375,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		570C4DB32D67E933AA2CFD39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB04473DDD2AFF5F4CC8F2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B3B0D644EA5C80C6CEE01A7F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,9 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAFDE6E1B075BBD004C7608 /* MKBRestaurantDataSourceTests.m in Sources */,
+				ABAFDE7A1B089CFF004C7608 /* MKBResultsViewControllerTests.m in Sources */,
 				ABAFDE691B0757DA004C7608 /* MKBRestaurantTests.m in Sources */,
-				ABAFDE711B075CE2004C7608 /* JSTestUtils.m in Sources */,
+				ABAFDE711B075CE2004C7608 /* MKBTestUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +588,7 @@
 		};
 		ABAFDE421B075246004C7608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B3E4E04F1866A6D1483CA7 /* Pods-JustEatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -567,6 +608,7 @@
 		};
 		ABAFDE431B075246004C7608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

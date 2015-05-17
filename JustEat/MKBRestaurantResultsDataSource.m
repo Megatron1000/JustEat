@@ -7,7 +7,29 @@
 //
 
 #import "MKBRestaurantResultsDataSource.h"
+#import "MKBRestaurant.h"
+#import "MKBResultTableViewCell.h"
+
+NSString *const restaurantCellIdentifier = @"RestaurantResultCell";
 
 @implementation MKBRestaurantResultsDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.restaurants.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MKBResultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:restaurantCellIdentifier];
+    MKBRestaurant *restaurant = self.restaurants[indexPath.row];
+    
+    cell.nameLabel.text = restaurant.name;
+    cell.cuisinesLabel.text = [restaurant cuisineTypesFormattedString];
+    cell.ratingsView.rating = restaurant.ratingStars;
+    cell.numberOfRatingsLabel.text = [restaurant numberOfRatingsFormattedString];
+    
+    return cell;
+}
 
 @end

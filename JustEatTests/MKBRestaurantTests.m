@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "JSTestUtils.h"
+#import "MKBTestUtils.h"
 #import "MKBRestaurant.h"
 
 @interface MKBRestaurantTests : XCTestCase
@@ -29,7 +29,7 @@
 
 - (void)testPopulatingWithJSON
 {
-    NSDictionary *restaurantFixture = [JSTestUtils loadJSONIntoDictionaryWithName:@"Restaurant"];
+    NSDictionary *restaurantFixture = [MKBTestUtils loadJSONIntoDictionaryWithName:@"Restaurant"];
     
     MKBRestaurant *restaurant = [[MKBRestaurant alloc]initWithDictionary:restaurantFixture];
     
