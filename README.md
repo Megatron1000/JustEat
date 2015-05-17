@@ -3,7 +3,7 @@
 
 ###  1. How long did you spend on the coding test? What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add.
 
-I spent approximately 4-5 hours on the test. If I had more time I would have included more unit tests. Unit testing mobile applications is not something every company looks for or actively undertakes so I was unsure if this was something that would be evaluated. I therefore chose to only TDD in a few quick win places, mostly concentrating on the model.
+I spent approximately 4-5 hours on the test. If I had more time I would have included more unit tests. I've found opinions on unit testing mobile applications to vary considerably between developers and organisations so it was difficult to know where automated or manual testing might ordinarily take over. I therefore chose to only TDD in a few quick win places; mostly concentrating around the model.
 
 ### 2. What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
