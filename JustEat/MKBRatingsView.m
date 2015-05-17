@@ -8,6 +8,7 @@
 
 #import "MKBRatingsView.h"
 #import "PureLayout.h"
+#import "UIColor+JustEatScheme.h"
 
 @interface MKBRatingsView ()
 
@@ -37,7 +38,7 @@
 
     _fillView = [[UIView alloc]initForAutoLayout];
     [self addSubview:_fillView];
-    _fillView.backgroundColor = [UIColor yellowColor];
+    _fillView.backgroundColor = [UIColor justEatYellow];
     [_fillView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeRight];
     self.fillViewWidthConstraint = [_fillView autoSetDimension:ALDimensionWidth toSize:self.frame.size.width];
     
@@ -52,14 +53,5 @@
     
     _rating = rating;
 }
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

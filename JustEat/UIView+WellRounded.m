@@ -7,13 +7,14 @@
 //
 
 #import "UIView+WellRounded.h"
+#import "UIColor+JustEatScheme.h"
 
 @implementation UIView (WellRounded)
 
 - (void)addRoundingAndBorder
 {
     self.layer.cornerRadius = 3;
-    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.borderColor = [UIColor justEatGray].CGColor;
     self.layer.borderWidth = 1;
     self.layer.masksToBounds = YES;
 }

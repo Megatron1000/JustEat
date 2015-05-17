@@ -44,10 +44,14 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
-
-    self.findRestaurantsButton.enabled = (newString.length > 0);
+    [self validateTextFieldInputWithString:newString];
     
     return YES;
+}
+
+- (void)validateTextFieldInputWithString:(NSString*)newString
+{
+    self.findRestaurantsButton.enabled = (newString.length > 0);
 }
 
 - (IBAction)gpsButtonPressed:(id)sender
@@ -58,6 +62,7 @@
     [self.postCodeFinder findCurrentLocationsPostCodeStringWithSuccess:^(NSString *postCodeString) {
         [SVProgressHUD dismiss];
         weakSelf.searchTermTextField.text = postCodeString;
+        [weakSelf validateTextFieldInputWithString:postCodeString];
     } andFailure:^(NSError *error) {
         [SVProgressHUD showErrorWithStatus:error.localizedDescription];
     }];
