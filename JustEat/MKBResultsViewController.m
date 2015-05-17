@@ -19,6 +19,9 @@
 
 @implementation MKBResultsViewController
 
+
+#pragma mark Getters & Setters
+
 - (void)setSearchTerm:(NSString *)searchTerm
 {
     self.navigationItem.title = searchTerm;
@@ -35,6 +38,9 @@
     
     _restaurants = restaurants;
 }
+
+
+#pragma mark Refreshing
 
 - (void)findRestaurantsForSearchTerm:(NSString*)searchTerm
 {

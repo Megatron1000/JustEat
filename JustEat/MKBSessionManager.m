@@ -11,6 +11,9 @@
 
 @implementation MKBSessionManager
 
+
+#pragma mark Initialising
+
 - (instancetype)initForJustEat
 {
     self = [super initWithBaseURL:[NSURL URLWithString:@"http://api-interview.just-eat.com/"]
@@ -36,6 +39,9 @@
     
     return configuration;
 }
+
+
+#pragma mark Network Calls
 
 - (void)findRestuarantsNearPostCode:(NSString*)postCode
                         withSuccess:(void (^)(NSArray *restaurants))success

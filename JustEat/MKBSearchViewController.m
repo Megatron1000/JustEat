@@ -16,12 +16,14 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTermTextField;
 @property (weak, nonatomic) IBOutlet UIButton *findRestaurantsButton;
-
 @property (strong, nonatomic) MKBPostCodeFinder *postCodeFinder;
 
 @end
 
 @implementation MKBSearchViewController
+
+
+#pragma mark Superclass Methods
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -30,6 +32,9 @@
         [segue.destinationViewController performSelector:@selector(setSearchTerm:) withObject:self.searchTermTextField.text];
     }
 }
+
+
+#pragma mark Getters & Setters
 
 - (MKBPostCodeFinder*)postCodeFinder
 {
@@ -41,6 +46,9 @@
     return _postCodeFinder;
 }
 
+
+#pragma mark Textfield Delegate
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
@@ -49,10 +57,16 @@
     return YES;
 }
 
+
+#pragma mark Validation
+
 - (void)validateTextFieldInputWithString:(NSString*)newString
 {
     self.findRestaurantsButton.enabled = (newString.length > 0);
 }
+
+
+#pragma mark Button Actions
 
 - (IBAction)gpsButtonPressed:(id)sender
 {

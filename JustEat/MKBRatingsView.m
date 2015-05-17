@@ -19,6 +19,8 @@
 
 @implementation MKBRatingsView
 
+#pragma mark Superclass Methods
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -29,6 +31,9 @@
     
     return self;
 }
+
+
+#pragma mark Initialising
 
 - (void)configureView
 {
@@ -45,6 +50,9 @@
     UIView *starMask = [[[NSBundle mainBundle] loadNibNamed:@"StarMask" owner:self options:nil]lastObject];
     self.maskView = starMask;
 }
+
+
+#pragma mark Getters & Setters
 
 - (void)setRating:(float)rating
 {

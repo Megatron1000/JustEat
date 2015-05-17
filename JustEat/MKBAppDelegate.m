@@ -17,14 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self configureAppearance];
-    
     return YES;
-}
-
-- (void)configureAppearance
-{
-//    UIColor *justEatRed = []
 }
 
 @end

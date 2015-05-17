@@ -37,6 +37,7 @@
 		ABAFDE8E1B08C2C2004C7608 /* UIViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE8D1B08C2C2004C7608 /* UIViewRounded.m */; };
 		ABAFDE911B08C2EF004C7608 /* UImageViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */; };
 		ABAFDE941B08D705004C7608 /* UIColor+JustEatScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE931B08D705004C7608 /* UIColor+JustEatScheme.m */; };
+		ABAFDE971B08E00A004C7608 /* NSObject+NilKey.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE961B08E00A004C7608 /* NSObject+NilKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		ABAFDE901B08C2EF004C7608 /* UImageViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UImageViewRounded.m; sourceTree = "<group>"; };
 		ABAFDE921B08D705004C7608 /* UIColor+JustEatScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JustEatScheme.h"; sourceTree = "<group>"; };
 		ABAFDE931B08D705004C7608 /* UIColor+JustEatScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JustEatScheme.m"; sourceTree = "<group>"; };
+		ABAFDE951B08E00A004C7608 /* NSObject+NilKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NilKey.h"; sourceTree = "<group>"; };
+		ABAFDE961B08E00A004C7608 /* NSObject+NilKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NilKey.m"; sourceTree = "<group>"; };
 		B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests.release.xcconfig"; sourceTree = "<group>"; };
 		C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,6 +283,8 @@
 				ABAFDE8A1B08C1EB004C7608 /* UIView+WellRounded.m */,
 				ABAFDE921B08D705004C7608 /* UIColor+JustEatScheme.h */,
 				ABAFDE931B08D705004C7608 /* UIColor+JustEatScheme.m */,
+				ABAFDE951B08E00A004C7608 /* NSObject+NilKey.h */,
+				ABAFDE961B08E00A004C7608 /* NSObject+NilKey.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				ABAFDE561B075274004C7608 /* MKBCuisineType.m in Sources */,
 				ABAFDE581B075274004C7608 /* MKBRatingsView.m in Sources */,
 				ABAFDE571B075274004C7608 /* MKBLogo.m in Sources */,
+				ABAFDE971B08E00A004C7608 /* NSObject+NilKey.m in Sources */,
 				ABAFDE6C1B07587F004C7608 /* MKBRestaurantResultsDataSource.m in Sources */,
 				ABAFDE8B1B08C1EB004C7608 /* UIView+WellRounded.m in Sources */,
 				ABAFDE671B075494004C7608 /* MKBSessionManager.m in Sources */,

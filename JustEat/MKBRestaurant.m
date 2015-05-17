@@ -2,13 +2,15 @@
 //  MKBRestaurants.m
 //
 //  Created by Mark Bridges on 16/05/2015
-//  Copyright (c) 2015 Ink Global. All rights reserved.
+//  Copyright (c) 2015 Mark Bridges. All rights reserved.
 //
 
 #import "MKBRestaurant.h"
 #import "MKBCuisineType.h"
 #import "MKBLogo.h"
 #import "NSString+ArrayWriter.h"
+#import "NSObject+NilKey.h"
+
 
 NSString *const kMKBRestaurantsRatingStars = @"RatingStars";
 NSString *const kMKBRestaurantsName = @"Name";
@@ -16,14 +18,11 @@ NSString *const kMKBRestaurantsNumberOfRatings = @"NumberOfRatings";
 NSString *const kMKBRestaurantsCuisineTypes = @"CuisineTypes";
 NSString *const kMKBRestaurantsLogo = @"Logo";
 
-@interface MKBRestaurant ()
-
-- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict;
-
-@end
 
 @implementation MKBRestaurant
 
+
+#pragma mark Initialising
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict
 {
@@ -73,6 +72,9 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
     return self;
 }
 
+
+#pragma custom methods
+
 - (NSString*)cuisineTypesFormattedString
 {
     NSArray *cuisineTypes = [self.cuisineTypes valueForKey:@"name"];
@@ -93,13 +95,6 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
     NSString *urlStringOfLogo = firstLogo.standardResolutionURL;
     
     return [NSURL URLWithString:urlStringOfLogo];
-}
-
-#pragma mark - Helper Method
-- (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict
-{
-    id object = [dict objectForKey:aKey];
-    return [object isEqual:[NSNull null]] ? nil : object;
 }
 
 @end

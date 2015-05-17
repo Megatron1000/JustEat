@@ -2,7 +2,7 @@
 //  MKBRestaurants.h
 //
 //  Created by Mark Bridges on 16/05/2015
-//  Copyright (c) 2015 Ink Global. All rights reserved.
+//  Copyright (c) 2015 Mark Bridges. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -18,8 +18,8 @@
 @property (nonatomic, strong) NSArray *logo;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
-
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
+
 - (NSString*)cuisineTypesFormattedString;
 - (NSString*)numberOfRatingsFormattedString;
 - (NSURL*)logoImageURL;

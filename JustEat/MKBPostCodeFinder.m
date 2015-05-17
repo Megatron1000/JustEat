@@ -19,24 +19,15 @@
 
 @implementation MKBPostCodeFinder
 
+#pragma mark Superclass Methods
+
 - (void)dealloc
 {
     self.locationManager.delegate = nil;
 }
 
-- (void)findCurrentLocationsPostCodeStringWithSuccess:(MKBPostCodeSuccessBlock)success
-                                           andFailure:(MKBPostCodeFailureBlock)failure
-{
-    self.successBlock = success;
-    self.failureBlock = failure;
-    
-    if ([self isLocationAccessAuthorised] == NO)
-    {
-        [self requestLocationAccess];
-    }
-    
-    [self.locationManager startUpdatingLocation];
-}
+
+#pragma mark Getters & Setters
 
 - (CLLocationManager*)locationManager
 {
@@ -50,20 +41,28 @@
     return _locationManager;
 }
 
-- (BOOL)isLocationAccessAuthorised
+
+#pragma mark Initialising
+
+- (void)findCurrentLocationsPostCodeStringWithSuccess:(MKBPostCodeSuccessBlock)success
+                                           andFailure:(MKBPostCodeFailureBlock)failure
 {
-    return ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse);
+    self.successBlock = success;
+    self.failureBlock = failure;
+    
+    [self requestAccessIfNeeded];
+    
+    [self.locationManager startUpdatingLocation];
 }
 
-- (BOOL)isLocationAccessAvailable
+- (void)requestAccessIfNeeded
 {
-    return [CLLocationManager locationServicesEnabled];
+    if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusAuthorizedWhenInUse)
+    {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
 }
 
-- (void)requestLocationAccess
-{
-    [self.locationManager requestWhenInUseAuthorization];
-}
 
 #pragma mark Location Manager Delegate Methods
 
@@ -71,7 +70,7 @@
 {
     if (status == kCLAuthorizationStatusDenied)
     {
-        self.failureBlock([NSError errorWithDomain:@"com.bridgetech.error"
+        self.failureBlock([NSError errorWithDomain:@"com.bridgetech.locationerror"
                                               code:1
                                           userInfo:@{NSLocalizedDescriptionKey : @"User denied access to location"}]);
     }
@@ -87,6 +86,9 @@
 {
     self.failureBlock(error);
 }
+
+
+#pragma mark Geocoding
 
 - (void)findPostCodeForLocation:(CLLocation*)location
 {
