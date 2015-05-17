@@ -11,7 +11,6 @@
 #import "MKBResultTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
 
-
 NSString *const restaurantCellIdentifier = @"RestaurantResultCell";
 
 @implementation MKBRestaurantResultsDataSource

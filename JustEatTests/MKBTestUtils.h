@@ -16,5 +16,4 @@
 + (NSData *)loadJSONIntoDataWithName:(NSString *)name;
 + (NSDictionary *)loadJSONIntoDictionaryWithName:(NSString *)name;
 
-
 @end

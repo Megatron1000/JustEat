@@ -47,14 +47,9 @@
     [self.viewController view];
 }
 
-- (void)tearDown
-{
-    [super tearDown];
-}
-
 - (void)testCellConfiguredWithRestaurant
 {
-    MKBResultTableViewCell *cell = (MKBResultTableViewCell*)[self.viewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    MKBResultTableViewCell *cell = (MKBResultTableViewCell *)[self.viewController.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
     
     XCTAssertEqualObjects(cell.nameLabel.text, @"Mark's Deli");
     XCTAssertEqualObjects(cell.cuisinesLabel.text, @"Sandwiches");

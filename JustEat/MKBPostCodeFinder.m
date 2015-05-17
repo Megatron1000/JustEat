@@ -26,10 +26,9 @@
     self.locationManager.delegate = nil;
 }
 
-
 #pragma mark Getters & Setters
 
-- (CLLocationManager*)locationManager
+- (CLLocationManager *)locationManager
 {
     if (_locationManager == nil)
     {
@@ -40,7 +39,6 @@
     
     return _locationManager;
 }
-
 
 #pragma mark Initialising
 
@@ -63,7 +61,6 @@
     }
 }
 
-
 #pragma mark Location Manager Delegate Methods
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
@@ -72,7 +69,7 @@
     {
         self.failureBlock([NSError errorWithDomain:@"com.bridgetech.locationerror"
                                               code:1
-                                          userInfo:@{NSLocalizedDescriptionKey : @"User denied access to location"}]);
+                                          userInfo:@{ NSLocalizedDescriptionKey : @"User denied access to location" }]);
     }
 }
 
@@ -87,14 +84,14 @@
     self.failureBlock(error);
 }
 
-
 #pragma mark Geocoding
 
-- (void)findPostCodeForLocation:(CLLocation*)location
+- (void)findPostCodeForLocation:(CLLocation *)location
 {
     __weak typeof(self) weakSelf = self;
-    CLGeocoder *geocoder = [[CLGeocoder alloc] init] ;
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error)
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder reverseGeocodeLocation:location completionHandler: ^(NSArray *placemarks, NSError *error)
      {
          CLPlacemark *placemarkWithPostcode;
          

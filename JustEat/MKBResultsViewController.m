@@ -1,6 +1,6 @@
 //
 //  MKBResultsViewController.m
-//  
+//
 //
 //  Created by Mark Bridges on 16/05/2015.
 //
@@ -18,7 +18,6 @@
 @end
 
 @implementation MKBResultsViewController
-
 
 #pragma mark Getters & Setters
 
@@ -39,22 +38,22 @@
     _restaurants = restaurants;
 }
 
-
 #pragma mark Refreshing
 
-- (void)findRestaurantsForSearchTerm:(NSString*)searchTerm
+- (void)findRestaurantsForSearchTerm:(NSString *)searchTerm
 {
     MKBSessionManager *sessionManager = [[MKBSessionManager alloc]initForJustEat];
     
     __weak typeof(self) weakSelf = self;
+    
     [SVProgressHUD show];
     
     [sessionManager findRestuarantsNearPostCode:searchTerm
-                                    withSuccess:^(NSArray *restaurants) {
+                                    withSuccess: ^(NSArray *restaurants) {
                                         [SVProgressHUD dismiss];
                                         weakSelf.restaurants = restaurants;
                                     }
-                                     andFailure:^(NSError *error) {
+                                     andFailure: ^(NSError *error) {
                                          [SVProgressHUD showErrorWithStatus:error.localizedDescription];
                                          [weakSelf.navigationController popViewControllerAnimated:YES];
                                      }];

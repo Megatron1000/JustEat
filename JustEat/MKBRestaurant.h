@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-
-
 @interface MKBRestaurant : NSObject
 
 @property (nonatomic, assign) double ratingStars;
@@ -20,8 +18,8 @@
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 
-- (NSString*)cuisineTypesFormattedString;
-- (NSString*)numberOfRatingsFormattedString;
-- (NSURL*)logoImageURL;
+- (NSString *)cuisineTypesFormattedString;
+- (NSString *)numberOfRatingsFormattedString;
+- (NSURL *)logoImageURL;
 
 @end

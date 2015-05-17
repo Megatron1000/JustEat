@@ -17,16 +17,6 @@
 
 @implementation MKBRestaurantTests
 
-- (void)setUp
-{
-    [super setUp];
-}
-
-- (void)tearDown
-{
-    [super tearDown];
-}
-
 - (void)testPopulatingWithJSON
 {
     NSDictionary *restaurantFixture = [MKBTestUtils loadJSONIntoDictionaryWithName:@"Restaurant"];

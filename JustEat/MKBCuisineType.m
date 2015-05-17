@@ -8,7 +8,6 @@
 #import "MKBCuisineType.h"
 #import "NSObject+NilKey.h"
 
-
 NSString *const kMKBCuisineTypesName = @"Name";
 
 @implementation MKBCuisineType
@@ -22,13 +21,12 @@ NSString *const kMKBCuisineTypesName = @"Name";
 {
     self = [super init];
     
-    if(self && [dict isKindOfClass:[NSDictionary class]])
+    if (self && [dict isKindOfClass:[NSDictionary class]])
     {
-            _name = [self objectOrNilForKey:kMKBCuisineTypesName fromDictionary:dict];
+        _name = [self objectOrNilForKey:kMKBCuisineTypesName fromDictionary:dict];
     }
     
     return self;
-    
 }
 
 @end

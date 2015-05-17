@@ -11,7 +11,6 @@
 #import "MKBPostCodeFinder.h"
 #import "SVProgressHUD.h"
 
-
 @interface MKBSearchViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTermTextField;
@@ -22,10 +21,9 @@
 
 @implementation MKBSearchViewController
 
-
 #pragma mark Superclass Methods
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
 }
@@ -38,10 +36,9 @@
     }
 }
 
-
 #pragma mark Getters & Setters
 
-- (MKBPostCodeFinder*)postCodeFinder
+- (MKBPostCodeFinder *)postCodeFinder
 {
     if (_postCodeFinder == nil)
     {
@@ -50,7 +47,6 @@
     
     return _postCodeFinder;
 }
-
 
 #pragma mark Textfield Delegate
 
@@ -62,14 +58,12 @@
     return YES;
 }
 
-
 #pragma mark Validation
 
-- (void)validateTextFieldInputWithString:(NSString*)newString
+- (void)validateTextFieldInputWithString:(NSString *)newString
 {
     self.findRestaurantsButton.enabled = (newString.length > 0);
 }
-
 
 #pragma mark Button Actions
 
@@ -78,11 +72,12 @@
     [SVProgressHUD show];
     
     __weak typeof(self) weakSelf = self;
-    [self.postCodeFinder findCurrentLocationsPostCodeStringWithSuccess:^(NSString *postCodeString) {
+    
+    [self.postCodeFinder findCurrentLocationsPostCodeStringWithSuccess: ^(NSString *postCodeString) {
         [SVProgressHUD dismiss];
         weakSelf.searchTermTextField.text = postCodeString;
         [weakSelf validateTextFieldInputWithString:postCodeString];
-    } andFailure:^(NSError *error) {
+    } andFailure: ^(NSError *error) {
         [SVProgressHUD showErrorWithStatus:error.localizedDescription];
     }];
 }

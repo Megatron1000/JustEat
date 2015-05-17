@@ -11,13 +11,12 @@
 
 @implementation MKBSessionManager
 
-
 #pragma mark Initialising
 
 - (instancetype)initForJustEat
 {
     self = [super initWithBaseURL:[NSURL URLWithString:@"http://api-interview.just-eat.com/"]
-             sessionConfiguration:[MKBSessionManager justEatConfiguration]];
+         sessionConfiguration    :[MKBSessionManager justEatConfiguration]];
     if (self)
     {
         self.requestSerializer = [AFJSONRequestSerializer serializer];
@@ -27,9 +26,9 @@
     return self;
 }
 
-+ (NSURLSessionConfiguration*)justEatConfiguration
++ (NSURLSessionConfiguration *)justEatConfiguration
 {
-    NSURLSessionConfiguration* configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     [configuration setHTTPAdditionalHeaders:@{
                                               @"Host": @"api-interview.just-eat.com",
                                               @"Accept-Language": @"en-GB",
@@ -40,23 +39,24 @@
     return configuration;
 }
 
-
 #pragma mark Network Calls
 
-- (void)findRestuarantsNearPostCode:(NSString*)postCode
+- (void)findRestuarantsNearPostCode:(NSString *)postCode
                         withSuccess:(void (^)(NSArray *restaurants))success
                          andFailure:(void (^)(NSError *error))failure
 {
-    NSDictionary *params = @{@"q" : postCode};
+    NSDictionary *params = @{
+                             @"q" : postCode
+                             };
     
-    [self GET:@"restaurants" parameters:params success:^(NSURLSessionDataTask *task, id responseObject)
-    {
-        success(responseObject);
-    }
-      failure:^(NSURLSessionDataTask *task, NSError *error)
-    {
-        failure(error);
-    }];
+    [self   GET:@"restaurants" parameters:params success: ^(NSURLSessionDataTask *task, id responseObject)
+     {
+         success(responseObject);
+     }
+        failure: ^(NSURLSessionDataTask *task, NSError *error)
+     {
+         failure(error);
+     }];
 }
 
 @end

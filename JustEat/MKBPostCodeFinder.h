@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^MKBPostCodeSuccessBlock)(NSString *postCodeString);
-typedef void(^MKBPostCodeFailureBlock)(NSError *error);
+typedef void (^MKBPostCodeSuccessBlock)(NSString *postCodeString);
+typedef void (^MKBPostCodeFailureBlock)(NSError *error);
 
 @interface MKBPostCodeFinder : NSObject
 

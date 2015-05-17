@@ -10,8 +10,8 @@
 
 @interface UIColor (JustEatScheme)
 
-+ (UIColor*)justEatRed;
-+ (UIColor*)justEatGray;
-+ (UIColor*)justEatYellow;
++ (UIColor *)justEatRed;
++ (UIColor *)justEatGray;
++ (UIColor *)justEatYellow;
 
 @end

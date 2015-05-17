@@ -10,17 +10,17 @@
 
 @implementation UIColor (JustEatScheme)
 
-+ (UIColor*)justEatRed
++ (UIColor *)justEatRed
 {
     return [UIColor colorWithRed:0.8 green:0.07 blue:0.11 alpha:1];
 }
 
-+ (UIColor*)justEatGray
++ (UIColor *)justEatGray
 {
     return [UIColor colorWithRed:0.76 green:0.76 blue:0.76 alpha:1];
 }
 
-+ (UIColor*)justEatYellow
++ (UIColor *)justEatYellow
 {
     return [UIColor colorWithRed:0.99 green:0.78 blue:0.36 alpha:1];
 }

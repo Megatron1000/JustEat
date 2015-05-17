@@ -32,7 +32,6 @@
     return self;
 }
 
-
 #pragma mark Initialising
 
 - (void)configureView
@@ -40,7 +39,7 @@
     UIView *starView = [[[NSBundle mainBundle] loadNibNamed:@"StarMask" owner:self options:nil]lastObject];
     [self addSubview:starView];
     [starView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
-
+    
     _fillView = [[UIView alloc]initForAutoLayout];
     [self addSubview:_fillView];
     _fillView.backgroundColor = [UIColor justEatYellow];
@@ -50,7 +49,6 @@
     UIView *starMask = [[[NSBundle mainBundle] loadNibNamed:@"StarMask" owner:self options:nil]lastObject];
     self.maskView = starMask;
 }
-
 
 #pragma mark Getters & Setters
 

@@ -12,7 +12,7 @@
 
 - (instancetype)initForJustEat;
 
-- (void)findRestuarantsNearPostCode:(NSString*)postCode
+- (void)findRestuarantsNearPostCode:(NSString *)postCode
                         withSuccess:(void (^)(NSArray *restaurants))success
                          andFailure:(void (^)(NSError *error))failure;
 

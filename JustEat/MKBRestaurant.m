@@ -11,16 +11,13 @@
 #import "NSString+ArrayWriter.h"
 #import "NSObject+NilKey.h"
 
-
 NSString *const kMKBRestaurantsRatingStars = @"RatingStars";
 NSString *const kMKBRestaurantsName = @"Name";
 NSString *const kMKBRestaurantsNumberOfRatings = @"NumberOfRatings";
 NSString *const kMKBRestaurantsCuisineTypes = @"CuisineTypes";
 NSString *const kMKBRestaurantsLogo = @"Logo";
 
-
 @implementation MKBRestaurant
-
 
 #pragma mark Initialising
 
@@ -33,7 +30,7 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
 {
     self = [super init];
     
-    if(self && [dict isKindOfClass:[NSDictionary class]])
+    if (self && [dict isKindOfClass:[NSDictionary class]])
     {
         _ratingStars = [[self objectOrNilForKey:kMKBRestaurantsRatingStars fromDictionary:dict] doubleValue];
         _name = [self objectOrNilForKey:kMKBRestaurantsName fromDictionary:dict];
@@ -53,10 +50,11 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
         }
         
         _cuisineTypes = [NSArray arrayWithArray:parsedMKBCuisineTypes];
-
+        
         NSObject *receivedMKBLogo = dict[kMKBRestaurantsLogo];
         NSMutableArray *parsedMKBLogo = [NSMutableArray array];
-        if ([receivedMKBLogo isKindOfClass:[NSArray class]]) {
+        if ([receivedMKBLogo isKindOfClass:[NSArray class]])
+        {
             for (NSDictionary *item in (NSArray *)receivedMKBLogo)
             {
                 if ([item isKindOfClass:[NSDictionary class]])
@@ -72,24 +70,23 @@ NSString *const kMKBRestaurantsLogo = @"Logo";
     return self;
 }
 
-
 #pragma custom methods
 
-- (NSString*)cuisineTypesFormattedString
+- (NSString *)cuisineTypesFormattedString
 {
     NSArray *cuisineTypes = [self.cuisineTypes valueForKey:@"name"];
     
     return [NSString stringWithArray:cuisineTypes];
 }
 
-- (NSString*)numberOfRatingsFormattedString
+- (NSString *)numberOfRatingsFormattedString
 {
     NSString *ratingsString = [NSString stringWithFormat:@"(%d)", self.numberOfRatings];
     
     return ratingsString;
 }
 
-- (NSURL*)logoImageURL
+- (NSURL *)logoImageURL
 {
     MKBLogo *firstLogo = self.logo.firstObject;
     NSString *urlStringOfLogo = firstLogo.standardResolutionURL;

@@ -8,7 +8,6 @@
 #import "MKBLogo.h"
 #import "NSObject+NilKey.h"
 
-
 NSString *const kMKBLogoStandardResolutionURL = @"StandardResolutionURL";
 
 @implementation MKBLogo
@@ -22,7 +21,7 @@ NSString *const kMKBLogoStandardResolutionURL = @"StandardResolutionURL";
 {
     self = [super init];
     
-    if(self && [dict isKindOfClass:[NSDictionary class]])
+    if (self && [dict isKindOfClass:[NSDictionary class]])
     {
         _standardResolutionURL = [self objectOrNilForKey:kMKBLogoStandardResolutionURL fromDictionary:dict];
     }

@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface MKBLogo : NSObject
 
 @property (nonatomic, copy) NSString *standardResolutionURL;

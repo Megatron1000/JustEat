@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface MKBCuisineType : NSObject
 
 @property (nonatomic, copy) NSString *name;
