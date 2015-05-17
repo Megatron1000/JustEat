@@ -30,6 +30,11 @@
     self.successBlock = success;
     self.failureBlock = failure;
     
+    if ([self isLocationAccessAuthorised] == NO)
+    {
+        [self requestLocationAccess];
+    }
+    
     [self.locationManager startUpdatingLocation];
 }
 
@@ -70,23 +75,12 @@
                                               code:1
                                           userInfo:@{NSLocalizedDescriptionKey : @"User denied access to location"}]);
     }
-    else if (status == kCLAuthorizationStatusNotDetermined)
-    {
-        [self requestLocationAccess];
-    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
-    CLLocation *location = [locations lastObject];
-    NSDate *eventDate = location.timestamp;
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    
-    if (fabs(howRecent) < 15.0 && (location.horizontalAccuracy >= 0) && (location.horizontalAccuracy < 400))
-    {
-        [self.locationManager stopUpdatingLocation];
-        [self findPostCodeForLocation:locations.lastObject];
-    }
+    [self.locationManager stopUpdatingLocation];
+    [self findPostCodeForLocation:locations.lastObject];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error

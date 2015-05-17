@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *searchTermTextField;
 @property (weak, nonatomic) IBOutlet UIButton *findRestaurantsButton;
 
+@property (strong, nonatomic) MKBPostCodeFinder *postCodeFinder;
+
 @end
 
 @implementation MKBSearchViewController
@@ -27,6 +29,16 @@
     {
         [segue.destinationViewController performSelector:@selector(setSearchTerm:) withObject:self.searchTermTextField.text];
     }
+}
+
+- (MKBPostCodeFinder*)postCodeFinder
+{
+    if (_postCodeFinder == nil)
+    {
+        _postCodeFinder = [[MKBPostCodeFinder alloc]init];
+    }
+    
+    return _postCodeFinder;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -40,12 +52,10 @@
 
 - (IBAction)gpsButtonPressed:(id)sender
 {
-    MKBPostCodeFinder *postCodeFinder = [[MKBPostCodeFinder alloc]init];
-    
     [SVProgressHUD show];
     
     __weak typeof(self) weakSelf = self;
-    [postCodeFinder findCurrentLocationsPostCodeStringWithSuccess:^(NSString *postCodeString) {
+    [self.postCodeFinder findCurrentLocationsPostCodeStringWithSuccess:^(NSString *postCodeString) {
         [SVProgressHUD dismiss];
         weakSelf.searchTermTextField.text = postCodeString;
     } andFailure:^(NSError *error) {

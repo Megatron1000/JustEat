@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+
 @interface MKBRatingsView : UIView
 
 @property (nonatomic, assign) float rating;
