@@ -10,7 +10,7 @@
 
 @interface MKBSessionManager : AFHTTPSessionManager
 
-- (instancetype)initWithBaseURL;
+- (instancetype)initForJustEat;
 
 - (void)findRestuarantsNearPostCode:(NSString*)postCode
                         withSuccess:(void (^)(NSArray *restaurants))success

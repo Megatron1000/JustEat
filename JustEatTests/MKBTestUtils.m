@@ -27,11 +27,18 @@
 
 + (NSDictionary *)loadJSONIntoDictionaryWithName:(NSString *)name
 {
-    NSData *jsonData = [[NSData alloc]initWithContentsOfFile:[[self testBundle] pathForResource:name ofType:@"json"]];
+    NSData *jsonData = [MKBTestUtils loadJSONIntoDataWithName:name];
     
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
     
     return dict;
+}
+
++ (NSData *)loadJSONIntoDataWithName:(NSString *)name
+{
+    NSData *jsonData = [[NSData alloc]initWithContentsOfFile:[[self testBundle] pathForResource:name ofType:@"json"]];
+    
+    return jsonData;
 }
 
 @end

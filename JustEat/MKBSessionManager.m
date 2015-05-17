@@ -7,15 +7,34 @@
 //
 
 #import "MKBSessionManager.h"
+#import "MKBRestaurantsResponseSerializer.h"
 
 @implementation MKBSessionManager
 
-- (instancetype)initWithBaseURL
+- (instancetype)initForJustEat
 {
-    self = [super initWithBaseURL:[NSURL URLWithString:@"http://api-interview.just-eat.com/"]];
-    self.requestSerializer = [AFJSONRequestSerializer serializer];
+    self = [super initWithBaseURL:[NSURL URLWithString:@"http://api-interview.just-eat.com/"]
+             sessionConfiguration:[MKBSessionManager justEatConfiguration]];
+    if (self)
+    {
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+        self.responseSerializer = [MKBRestaurantsResponseSerializer serializer];
+    }
     
     return self;
+}
+
++ (NSURLSessionConfiguration*)justEatConfiguration
+{
+    NSURLSessionConfiguration* configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    [configuration setHTTPAdditionalHeaders:@{
+                                              @"Host": @"api-interview.just-eat.com",
+                                              @"Accept-Language": @"en-GB",
+                                              @"Authorization": @"Basic VGVjaFRlc3RBUEk6dXNlcjI=",
+                                              @"Accept-Tenant": @"uk",
+                                              }];
+    
+    return configuration;
 }
 
 - (void)findRestuarantsNearPostCode:(NSString*)postCode

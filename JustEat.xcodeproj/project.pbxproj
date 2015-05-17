@@ -30,6 +30,9 @@
 		ABAFDE771B0761BE004C7608 /* NSString+ArrayWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE761B0761BE004C7608 /* NSString+ArrayWriter.m */; };
 		ABAFDE7A1B089CFF004C7608 /* MKBResultsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */; };
 		ABAFDE7D1B08A3B4004C7608 /* MKBPostCodeFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE7C1B08A3B4004C7608 /* MKBPostCodeFinder.m */; };
+		ABAFDE811B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE801B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m */; };
+		ABAFDE831B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */; };
+		ABAFDE851B08BF18004C7608 /* RestaurantFullResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,10 @@
 		ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBResultsViewControllerTests.m; sourceTree = "<group>"; };
 		ABAFDE7B1B08A3B4004C7608 /* MKBPostCodeFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBPostCodeFinder.h; sourceTree = "<group>"; };
 		ABAFDE7C1B08A3B4004C7608 /* MKBPostCodeFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBPostCodeFinder.m; sourceTree = "<group>"; };
+		ABAFDE7F1B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBRestaurantsResponseSerializer.h; sourceTree = "<group>"; };
+		ABAFDE801B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantsResponseSerializer.m; sourceTree = "<group>"; };
+		ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKBRestaurantResponseSerializerTests.m; sourceTree = "<group>"; };
+		ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RestaurantFullResponse.json; sourceTree = "<group>"; };
 		B0906DC7B7793A66FB7963B2 /* Pods-JustEatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEatTests/Pods-JustEatTests.release.xcconfig"; sourceTree = "<group>"; };
 		C85A90E14EAF057AED14EFE3 /* Pods-JustEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JustEat/Pods-JustEat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +182,7 @@
 				ABAFDE381B075246004C7608 /* Supporting Files */,
 				ABAFDE681B0757DA004C7608 /* MKBRestaurantTests.m */,
 				ABAFDE791B089CFF004C7608 /* MKBResultsViewControllerTests.m */,
+				ABAFDE821B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m */,
 				ABAFDE6F1B075CE2004C7608 /* MKBTestUtils.h */,
 				ABAFDE701B075CE2004C7608 /* MKBTestUtils.m */,
 			);
@@ -232,6 +240,8 @@
 			children = (
 				ABAFDE651B075494004C7608 /* MKBSessionManager.h */,
 				ABAFDE661B075494004C7608 /* MKBSessionManager.m */,
+				ABAFDE7F1B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.h */,
+				ABAFDE801B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -239,6 +249,7 @@
 		ABAFDE721B075D53004C7608 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				ABAFDE841B08BF18004C7608 /* RestaurantFullResponse.json */,
 				ABAFDE731B075D53004C7608 /* Restaurant.json */,
 			);
 			path = Fixtures;
@@ -366,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFDE851B08BF18004C7608 /* RestaurantFullResponse.json in Resources */,
 				ABAFDE741B075D53004C7608 /* Restaurant.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +454,7 @@
 			files = (
 				ABAFDE771B0761BE004C7608 /* NSString+ArrayWriter.m in Sources */,
 				ABAFDE7D1B08A3B4004C7608 /* MKBPostCodeFinder.m in Sources */,
+				ABAFDE811B08BA4B004C7608 /* MKBRestaurantsResponseSerializer.m in Sources */,
 				ABAFDE211B075246004C7608 /* main.m in Sources */,
 				ABAFDE5C1B075274004C7608 /* MKBSearchViewController.m in Sources */,
 				ABAFDE551B075274004C7608 /* MKBAppDelegate.m in Sources */,
@@ -460,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAFDE831B08BECF004C7608 /* MKBRestaurantResponseSerializerTests.m in Sources */,
 				ABAFDE7A1B089CFF004C7608 /* MKBResultsViewControllerTests.m in Sources */,
 				ABAFDE691B0757DA004C7608 /* MKBRestaurantTests.m in Sources */,
 				ABAFDE711B075CE2004C7608 /* MKBTestUtils.m in Sources */,

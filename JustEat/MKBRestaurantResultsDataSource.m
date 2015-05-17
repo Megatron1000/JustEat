@@ -9,6 +9,8 @@
 #import "MKBRestaurantResultsDataSource.h"
 #import "MKBRestaurant.h"
 #import "MKBResultTableViewCell.h"
+#import "UIImageView+AFNetworking.h"
+
 
 NSString *const restaurantCellIdentifier = @"RestaurantResultCell";
 
@@ -28,6 +30,7 @@ NSString *const restaurantCellIdentifier = @"RestaurantResultCell";
     cell.cuisinesLabel.text = [restaurant cuisineTypesFormattedString];
     cell.ratingsView.rating = restaurant.ratingStars;
     cell.numberOfRatingsLabel.text = [restaurant numberOfRatingsFormattedString];
+    [cell.logoImageView setImageWithURL:[restaurant logoImageURL] placeholderImage:[UIImage imageNamed:@"PlateHolder"]];
     
     return cell;
 }

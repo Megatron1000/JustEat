@@ -4,12 +4,13 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--JUST EAT-->
         <scene sceneID="Xrl-m0-Ejo">
             <objects>
-                <viewController storyboardIdentifier="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XP8-5M-cC9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XP8-5M-cC9" customClass="MKBSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UsT-NG-I04"/>
                         <viewControllerLayoutGuide type="bottom" id="xJz-Mm-UJv"/>
@@ -18,29 +19,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-YN-Jv2">
-                                <rect key="frame" x="161" y="186" width="278" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-dH-FVW">
-                                <rect key="frame" x="242" y="377" width="117" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8w-dH-FVW">
+                                <rect key="frame" x="242" y="286" width="117" height="30"/>
                                 <state key="normal" title="Find Restaurants">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mrl-pK-xVt" kind="show" id="NFD-nA-bLu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBp-fy-cGX">
-                                <rect key="frame" x="441" y="186" width="30" height="30"/>
-                                <state key="normal" image="gps">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-um-cnW" userLabel="TextField &amp; GPS Button View">
+                                <rect key="frame" x="227" y="136" width="147" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your postcode" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-YN-Jv2">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="XP8-5M-cC9" id="rst-BN-fvB"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBp-fy-cGX" userLabel="GPS Button">
+                                        <rect key="frame" x="117" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pBp-fy-cGX" secondAttribute="height" multiplier="1:1" id="5Ex-ZT-rGF"/>
+                                            <constraint firstAttribute="width" constant="30" id="Jdj-Vu-uY1"/>
+                                            <constraint firstAttribute="width" constant="30" id="bst-bi-HMK"/>
+                                        </constraints>
+                                        <state key="normal" image="gps">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bst-bi-HMK"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="gpsButtonPressed:" destination="XP8-5M-cC9" eventType="touchUpInside" id="lVB-bQ-uvI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pBp-fy-cGX" secondAttribute="trailing" id="1ne-Xn-aW4"/>
+                                    <constraint firstItem="s0y-YN-Jv2" firstAttribute="leading" secondItem="TH6-um-cnW" secondAttribute="leading" id="2nG-CF-Xgo"/>
+                                    <constraint firstAttribute="bottom" secondItem="s0y-YN-Jv2" secondAttribute="bottom" id="8Gr-6k-RS7"/>
+                                    <constraint firstItem="pBp-fy-cGX" firstAttribute="top" secondItem="TH6-um-cnW" secondAttribute="top" id="dh7-Uk-mrH"/>
+                                    <constraint firstItem="pBp-fy-cGX" firstAttribute="leading" secondItem="s0y-YN-Jv2" secondAttribute="trailing" constant="2" id="oeO-vP-D33"/>
+                                    <constraint firstAttribute="bottom" secondItem="pBp-fy-cGX" secondAttribute="bottom" id="ofn-1g-enA"/>
+                                    <constraint firstItem="s0y-YN-Jv2" firstAttribute="top" secondItem="TH6-um-cnW" secondAttribute="top" id="uQi-Hj-eTC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="d8w-dH-FVW" secondAttribute="centerX" id="8H7-uU-MAC"/>
+                            <constraint firstItem="d8w-dH-FVW" firstAttribute="centerY" secondItem="VHW-Q4-Oa6" secondAttribute="bottom" multiplier="1/2" constant="1" id="Ly7-55-ObD"/>
+                            <constraint firstItem="TH6-um-cnW" firstAttribute="centerY" secondItem="VHW-Q4-Oa6" secondAttribute="bottom" multiplier="1/4" constant="1" id="ZjO-8E-YWh"/>
+                            <constraint firstAttribute="centerX" secondItem="TH6-um-cnW" secondAttribute="centerX" id="inP-E0-jOM"/>
+                            <constraint firstItem="TH6-um-cnW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VHW-Q4-Oa6" secondAttribute="leadingMargin" constant="20" id="oda-Cu-RW7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wRT-cd-hbA"/>
+                    <navigationItem key="navigationItem" title="JUST EAT" id="wRT-cd-hbA">
+                        <barButtonItem key="backBarButtonItem" title="Search" id="i7v-Bd-oN5"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="mrl-pK-xVt" kind="show" id="AW1-mN-py3"/>
+                        <outlet property="findRestaurantsButton" destination="d8w-dH-FVW" id="XrD-vb-i2T"/>
+                        <outlet property="searchTermTextField" destination="s0y-YN-Jv2" id="cmP-nf-t18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNo-kY-mTw" userLabel="First Responder" sceneMemberID="firstResponder"/>

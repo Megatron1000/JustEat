@@ -13,6 +13,8 @@
 + (NSBundle *)testBundle;
 + (NSString *)loadJSONFromBundle:(NSBundle *)bundle withName:(NSString *)name;
 + (NSString *)loadJSONWithName:(NSString *)name;
++ (NSData *)loadJSONIntoDataWithName:(NSString *)name;
 + (NSDictionary *)loadJSONIntoDictionaryWithName:(NSString *)name;
+
 
 @end
